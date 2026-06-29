@@ -1,0 +1,39 @@
+name: Render and publish Quarto book
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Nesta entrega inicial, os blocos executáveis dos módulos estão congelados
+      # ou marcados como demonstrativos. Em etapas posteriores, habilite a instalação
+      # completa do ambiente caso o site precise executar notebooks no build.
+      #
+      # - name: Install Python dependencies
+      #   run: pip install -r environment/requirements.txt
+
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,22 @@
+---
+title: "Módulo 1 — Deep Learning e PINNs"
+subtitle: "Inteligência Artificial na Engenharia Aeroespacial — SEMUNI 2026"
+author: "Prof. Dr. Victor Rafael Rezende Celestino"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    incremental: false
+---
+
+## Objetivo
+
+Sintetizar MLPs, deep learning e PINNs.
+
+## Mensagem central
+
+Aprendizado profundo pode aproximar funções e incorporar restrições físicas.
+
+## Transição
+
+Abrir o roteiro correspondente no GitHub Pages.

@@ -1,0 +1,95 @@
+# Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign
+
+## 1. Objetivos de aprendizagem
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+- reconhecer o problema de engenharia associado ao módulo;
+- compreender a intuição da classe de modelo de IA apresentada;
+- identificar uma demonstração computacional mínima;
+- avaliar riscos de extrapolação, validação e consistência física;
+- localizar recursos públicos para aprofundamento.
+
+## 2. Problema de engenharia
+
+Projeto preliminar de aeronaves de pequeno porte com disciplinas acopladas: aerodinâmica, estruturas, massa, propulsão, desempenho, estabilidade e restrições operacionais.
+
+## 3. Classe de modelo de IA
+
+Modelos substitutos, otimização bayesiana, aprendizado ativo e integração com frameworks de otimização multidisciplinar, especialmente OpenMDAO e ferramentas de geometria conceitual.
+
+## 4. Fundamentos conceituais
+
+Variáveis de projeto, funções objetivo, restrições, disciplinas acopladas, análise de sensibilidade, metamodelos, trade-offs e busca em espaços de configuração.
+
+## 5. Formulação matemática mínima
+
+Um problema MDO simplificado pode ser escrito como:
+
+\[
+\min_{x} \; F(x)
+\]
+
+sujeito a:
+
+\[
+g_i(x) \leq 0,\quad i=1,\ldots,m,
+\]
+
+\[
+h_j(x) = 0,\quad j=1,\ldots,p,
+\]
+
+em que \(x\) representa variáveis de projeto, \(F(x)\) é a função objetivo e \(g_i, h_j\) representam restrições de engenharia.
+
+## 6. Mapa de demonstração ao vivo
+
+| Passo | Ação em sala | Mensagem didática |
+|---:|---|---|
+| 1 | Abrir a página do módulo no GitHub Pages | Apresentar o problema de engenharia |
+| 2 | Abrir o notebook associado | Mostrar o fluxo computacional mínimo |
+| 3 | Executar ou comentar as células principais | Relacionar código, modelo e hipótese física |
+| 4 | Alterar um parâmetro simples | Evidenciar sensibilidade e limites do modelo |
+| 5 | Discutir validação | Evitar uso acrítico da IA em engenharia |
+
+## 7. Links para abrir durante a aula
+
+- OpenMDAO Documentation;
+- OpenAeroStruct Documentation;
+- OpenVSP Documentation;
+- UIUC Airfoil Data Site;
+- materiais públicos de AeroDesign e projeto conceitual de aeronaves.
+
+## 8. Notebook associado
+
+> Notebook principal: `notebooks/04_mdo_aerodesign_openmdao.ipynb`
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.
+
+## 9. Cuidados de engenharia
+
+- Modelos preliminares devem ser tratados como apoio à decisão, não como certificação;
+- acoplamentos entre disciplinas podem gerar efeitos não intuitivos;
+- restrições estruturais, operacionais e de segurança devem prevalecer sobre ganho de função objetivo;
+- otimização sem validação pode produzir soluções inviáveis.
+
+## 10. Questões de discussão
+
+- Como definir variáveis de projeto relevantes para uma aeronave de pequeno porte?
+- Qual é o papel de um surrogate model em MDO?
+- Como lidar com trade-offs entre carga paga, decolagem, massa e desempenho aerodinâmico?
+
+## 11. Possíveis projetos derivados
+
+- MDO simplificado de asa para AeroDesign;
+- surrogate model para estimar carga paga;
+- estudo de sensibilidade de alongamento e área de asa;
+- integração OpenVSP–OpenMDAO em projeto conceitual.
+
+## 12. Leituras recomendadas
+
+- @martins2021engineering
+- @gray2019openmdao
+- @jasa2018open
+- @forrester2008engineering
+- @brunton2022data

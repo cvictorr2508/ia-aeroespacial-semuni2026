@@ -1,0 +1,93 @@
+# Módulo 3 — GNNs, otimização, MINLP e MPC
+
+## 1. Objetivos de aprendizagem
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+- reconhecer o problema de engenharia associado ao módulo;
+- compreender a intuição da classe de modelo de IA apresentada;
+- identificar uma demonstração computacional mínima;
+- avaliar riscos de extrapolação, validação e consistência física;
+- localizar recursos públicos para aprofundamento.
+
+## 2. Problema de engenharia
+
+Representação de sistemas complexos, malhas, componentes, restrições e problemas de otimização por meio de grafos, com aplicações em otimização combinatória, MINLP e controle preditivo.
+
+## 3. Classe de modelo de IA
+
+Redes neurais de grafo, grafos bipartidos, embeddings e message passing. O módulo apresenta como problemas de otimização podem ser representados por variáveis, restrições e relações estruturais.
+
+## 4. Fundamentos conceituais
+
+Nós, arestas, atributos, grafos bipartidos, embeddings, agregação de vizinhança, message passing, warm start, predição de variáveis ativas e suporte a decisões em horizonte móvel.
+
+## 5. Formulação matemática mínima
+
+Em uma GNN, uma etapa genérica de message passing pode ser escrita como:
+
+\[
+m_i^{(k)} = \sum_{j \in \mathcal{N}(i)}
+\phi^{(k)}(h_i^{(k)}, h_j^{(k)}, e_{ij}),
+\]
+
+\[
+h_i^{(k+1)} =
+\psi^{(k)}(h_i^{(k)}, m_i^{(k)}),
+\]
+
+onde \(h_i\) é a representação do nó, \(e_{ij}\) representa atributos da aresta e \(\mathcal{N}(i)\) é a vizinhança de \(i\).
+
+## 6. Mapa de demonstração ao vivo
+
+| Passo | Ação em sala | Mensagem didática |
+|---:|---|---|
+| 1 | Abrir a página do módulo no GitHub Pages | Apresentar o problema de engenharia |
+| 2 | Abrir o notebook associado | Mostrar o fluxo computacional mínimo |
+| 3 | Executar ou comentar as células principais | Relacionar código, modelo e hipótese física |
+| 4 | Alterar um parâmetro simples | Evidenciar sensibilidade e limites do modelo |
+| 5 | Discutir validação | Evitar uso acrítico da IA em engenharia |
+
+## 7. Links para abrir durante a aula
+
+- PyTorch Geometric Documentation;
+- DGL Documentation;
+- MIPLIB;
+- MILPBench;
+- benchmarks de facility location;
+- materiais introdutórios sobre aprendizado para otimização.
+
+## 8. Notebook associado
+
+> Notebook principal: `notebooks/03_gnn_bipartite_minlp.ipynb`
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.
+
+## 9. Cuidados de engenharia
+
+- GNNs podem capturar padrões estruturais, mas não garantem otimalidade;
+- decisões geradas por IA devem ser verificadas por solucionadores ou regras de viabilidade;
+- benchmarks de otimização nem sempre representam sistemas aeroespaciais reais;
+- MPC exige tratamento rigoroso de estabilidade, restrições e robustez.
+
+## 10. Questões de discussão
+
+- Como representar um problema de otimização como grafo bipartido?
+- GNN deve substituir ou auxiliar o solver?
+- Como validar uma política aproximada em MPC?
+
+## 11. Possíveis projetos derivados
+
+- grafo bipartido para pequeno problema MILP;
+- classificação de variáveis candidatas a zero/um;
+- warm start orientado por aprendizado;
+- GNN para rede simplificada de componentes aeroespaciais.
+
+## 12. Leituras recomendadas
+
+- @kipf2017semi
+- @gilmer2017neural
+- @battaglia2018relational
+- @fey2019fast
+- @zhou2020graph
+- @rawlings2017model

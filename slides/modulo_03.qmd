@@ -1,0 +1,22 @@
+---
+title: "Módulo 3 — GNNs e Otimização"
+subtitle: "Inteligência Artificial na Engenharia Aeroespacial — SEMUNI 2026"
+author: "Prof. Dr. Victor Rafael Rezende Celestino"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    incremental: false
+---
+
+## Objetivo
+
+Sintetizar grafos, GNNs, MINLP e MPC.
+
+## Mensagem central
+
+Grafos representam relações estruturais de sistemas e problemas de decisão.
+
+## Transição
+
+Abrir o roteiro correspondente no GitHub Pages.

@@ -1,0 +1,22 @@
+name: ia-aeroespacial-semuni2026
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - jupyterlab
+  - notebook
+  - networkx
+  - tqdm
+  - pip
+  - pip:
+      - torch
+      - deepxde
+      - torch-geometric
+      - openmdao
+      - pyomo

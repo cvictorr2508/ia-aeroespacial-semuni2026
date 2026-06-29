@@ -1,0 +1,22 @@
+---
+title: "Módulo 4 — IA e MDO"
+subtitle: "Inteligência Artificial na Engenharia Aeroespacial — SEMUNI 2026"
+author: "Prof. Dr. Victor Rafael Rezende Celestino"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    incremental: false
+---
+
+## Objetivo
+
+Sintetizar MDO, IA e projeto preliminar inspirado em AeroDesign.
+
+## Mensagem central
+
+IA pode acelerar etapas de projeto multidisciplinar, respeitando restrições de engenharia.
+
+## Transição
+
+Abrir o roteiro correspondente no GitHub Pages.

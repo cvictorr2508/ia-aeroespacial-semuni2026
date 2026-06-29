@@ -1,0 +1,28 @@
+# Núcleo científico
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.8
+scikit-learn>=1.3
+jupyterlab>=4.0
+notebook>=7.0
+
+# Deep learning
+torch>=2.2
+
+# PINNs
+deepxde>=1.10
+
+# Grafos
+torch-geometric>=2.5
+# dgl pode exigir instalação específica conforme CPU/CUDA.
+# Consulte https://www.dgl.ai/pages/start.html antes de habilitar em ambiente local.
+# dgl>=2.0
+
+# Otimização e MDO
+openmdao>=3.30
+pyomo>=6.7
+
+# Utilidades
+networkx>=3.2
+tqdm>=4.66

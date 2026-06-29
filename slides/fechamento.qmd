@@ -1,0 +1,22 @@
+---
+title: "Fechamento"
+subtitle: "Inteligência Artificial na Engenharia Aeroespacial — SEMUNI 2026"
+author: "Prof. Dr. Victor Rafael Rezende Celestino"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    incremental: false
+---
+
+## Objetivo
+
+Conectar bibliografia, repositório e projetos futuros.
+
+## Mensagem central
+
+O valor do minicurso está na continuidade: notebooks, projetos, TCCs, IC e extensão.
+
+## Transição
+
+Abrir o roteiro correspondente no GitHub Pages.

@@ -1,0 +1,32 @@
+# Recursos computacionais, datasets e repositórios
+
+## Bibliotecas e frameworks
+
+| Recurso | Uso no minicurso |
+|---|---|
+| Python, NumPy, SciPy, Pandas, Matplotlib, Scikit-learn | Manipulação de dados, modelagem, regressão e visualização |
+| PyTorch | Construção de MLPs, redes profundas e protótipos de PINNs |
+| DeepXDE | Alternativa especializada para redes neurais informadas pela física |
+| PyTorch Geometric | Construção e treinamento de GNNs |
+| DGL | Alternativa para modelagem e treinamento de GNNs |
+| OpenMDAO | Análise e otimização multidisciplinar |
+| OpenAeroStruct | Otimização aeroestrutural acoplada |
+| OpenVSP | Modelagem paramétrica e análise conceitual de aeronaves |
+| Pyomo e SciPy Optimize | Modelagem e solução de problemas de otimização |
+
+## Datasets e repositórios públicos
+
+| Recurso | Uso didático |
+|---|---|
+| NASA Airfoil Self-Noise | Regressão aplicada à aerodinâmica/acústica de aerofólios |
+| UIUC Airfoil Data Site | Coordenadas de aerofólios para estudos preliminares de geometria |
+| NPARC Alliance / NASA CFD resources | Discussão de validação computacional e fluidodinâmica |
+| ShapeNet / ShapeNet Part | Representação geométrica, nuvens de pontos e IA generativa |
+| MIPLIB | Benchmarks de programação inteira mista |
+| MILPBench e facility location benchmarks | Aprendizado para otimização e geração de warm starts |
+| Repositórios de PINNs em PyTorch e DeepXDE | Exemplos de EDOs, EDPs e sistemas físicos |
+| Repositórios OpenMDAO e OpenAeroStruct | Exemplos de MDO, análise aeroestrutural e otimização |
+
+## Política de dados
+
+Este repositório não redistribui datasets de terceiros por padrão. Sempre que possível, serão fornecidos links, instruções de acesso e scripts de download, respeitando as licenças originais.

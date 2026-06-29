@@ -1,0 +1,38 @@
+# Apresentação e filosofia do curso
+
+## Tese central
+
+A inteligência artificial deve ser compreendida como **acelerador, aproximador e organizador de conhecimento** em engenharia aeroespacial, não como substituta dos princípios físicos, matemáticos e experimentais que sustentam a engenharia.
+
+Em problemas aeroespaciais, modelos de IA podem:
+
+- aproximar funções de alto custo computacional;
+- apoiar a exploração de espaços de projeto;
+- reduzir o tempo de simulações preliminares;
+- extrair padrões de dados experimentais, numéricos ou operacionais;
+- representar sistemas complexos por grafos;
+- apoiar decisões em otimização e controle.
+
+Contudo, esses modelos devem ser avaliados com rigor quanto a:
+
+- domínio de validade;
+- extrapolação;
+- incerteza;
+- consistência física;
+- interpretabilidade;
+- robustez computacional;
+- rastreabilidade dos dados e hipóteses.
+
+## Diretriz pedagógica dos módulos
+
+Cada módulo será guiado por três perguntas:
+
+1. **Qual problema de engenharia está sendo tratado?**
+2. **Qual classe de modelo de IA é adequada e por quê?**
+3. **Quais cuidados de validação, extrapolação e consistência física devem ser observados?**
+
+Essa estrutura busca conectar intuição física, formulação matemática e demonstração computacional.
+
+## Escopo e limites
+
+Este minicurso é uma introdução aplicada. Em quatro horas, não é realista treinar profundamente os participantes em PyTorch, DeepXDE, PyTorch Geometric, DGL, OpenMDAO, OpenAeroStruct e OpenVSP. O objetivo é oferecer um mapa conceitual, um conjunto de exemplos e um repositório público para aprofundamento.

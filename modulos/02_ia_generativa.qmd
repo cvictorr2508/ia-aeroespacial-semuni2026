@@ -1,0 +1,92 @@
+# Módulo 2 — IA generativa, dados sintéticos e modelos substitutos
+
+## 1. Objetivos de aprendizagem
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+- reconhecer o problema de engenharia associado ao módulo;
+- compreender a intuição da classe de modelo de IA apresentada;
+- identificar uma demonstração computacional mínima;
+- avaliar riscos de extrapolação, validação e consistência física;
+- localizar recursos públicos para aprofundamento.
+
+## 2. Problema de engenharia
+
+Geração de dados sintéticos, exploração de geometrias e construção de modelos substitutos para reduzir custo computacional em simulações aeroespaciais.
+
+## 3. Classe de modelo de IA
+
+Modelos generativos, incluindo VAEs, GANs, modelos de difusão, modelos autorregressivos e mecanismos de atenção. O módulo enfatiza também surrogate models como aproximadores de simulações caras.
+
+## 4. Fundamentos conceituais
+
+Distribuição de dados, espaço latente, codificador, decodificador, discriminador, difusão, atenção, plausibilidade física, aumento de dados e aprendizado ativo.
+
+## 5. Formulação matemática mínima
+
+Um modelo substituto busca aproximar uma função de alto custo:
+
+\[
+y = f(x) \quad \Rightarrow \quad \hat{y} = \hat{f}_\theta(x),
+\]
+
+em que \(f\) pode representar uma simulação CFD, análise estrutural ou cálculo de desempenho.
+
+Em um VAE, o treinamento combina reconstrução e regularização probabilística:
+
+\[
+\mathcal{L} =
+\mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x|z)] -
+D_{KL}(q_\phi(z|x)\|p(z)).
+\]
+
+## 6. Mapa de demonstração ao vivo
+
+| Passo | Ação em sala | Mensagem didática |
+|---:|---|---|
+| 1 | Abrir a página do módulo no GitHub Pages | Apresentar o problema de engenharia |
+| 2 | Abrir o notebook associado | Mostrar o fluxo computacional mínimo |
+| 3 | Executar ou comentar as células principais | Relacionar código, modelo e hipótese física |
+| 4 | Alterar um parâmetro simples | Evidenciar sensibilidade e limites do modelo |
+| 5 | Discutir validação | Evitar uso acrítico da IA em engenharia |
+
+## 7. Links para abrir durante a aula
+
+- NASA Airfoil Self-Noise Dataset;
+- UIUC Airfoil Data Site;
+- ShapeNet / ShapeNet Part;
+- PyTorch Documentation;
+- exemplos de surrogate modeling em Scikit-learn e PyTorch.
+
+## 8. Notebook associado
+
+> Notebook principal: `notebooks/02_surrogate_dados_sinteticos.ipynb`
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.
+
+## 9. Cuidados de engenharia
+
+- Dados sintéticos não substituem validação experimental;
+- geometrias geradas precisam respeitar restrições físicas e operacionais;
+- surrogate models podem falhar severamente fora do domínio de treinamento;
+- métricas estatísticas devem ser combinadas com julgamento de engenharia.
+
+## 10. Questões de discussão
+
+- Como validar dados sintéticos em engenharia?
+- Quando um surrogate model é suficiente para decisão preliminar?
+- Que tipo de erro é aceitável em projeto conceitual?
+
+## 11. Possíveis projetos derivados
+
+- modelo substituto para ruído de aerofólio;
+- geração de amostras sintéticas de configurações de asa;
+- comparação entre Gaussian Process, Random Forest e MLP para regressão aerodinâmica.
+
+## 12. Leituras recomendadas
+
+- @goodfellow2014generative
+- @kingma2013auto
+- @ho2020denoising
+- @rombach2022high
+- @forrester2008engineering

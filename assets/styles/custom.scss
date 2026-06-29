@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+
+$primary: #1f4e79;
+$font-family-sans-serif: "Arial", "Helvetica", sans-serif;
+$font-family-monospace: "Consolas", "Liberation Mono", monospace;
+
+/*-- scss:rules --*/
+
+h1, h2, h3 {
+  color: #1f4e79;
+}
+
+.callout {
+  border-radius: 0.35rem;
+}
+
+.sidebar-title {
+  font-weight: 700;
+}

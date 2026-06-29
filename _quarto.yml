@@ -1,0 +1,75 @@
+project:
+  type: book
+
+lang: pt-BR
+
+book:
+  title: "Inteligência Artificial na Engenharia Aeroespacial"
+  subtitle: "Minicurso panorâmico-aplicado — SEMUNI 2026"
+  author:
+    - name: "Prof. Dr. Victor Rafael Rezende Celestino"
+      affiliation: "Universidade de Brasília — ADM/FACE, LAMFO e CENIA"
+  date: "2026-09-20"
+  date-format: "long"
+  description: "Material didático aberto para minicurso de extensão sobre aplicações de inteligência artificial na engenharia aeroespacial."
+  repo-url: "https://github.com/SEU-USUARIO/ia-aeroespacial-semuni2026"
+  site-url: "https://SEU-USUARIO.github.io/ia-aeroespacial-semuni2026/"
+  repo-actions: [edit, issue]
+  downloads: [pdf, epub]
+  sharing: [linkedin]
+  sidebar:
+    style: docked
+    search: true
+  chapters:
+    - index.qmd
+    - apresentacao.qmd
+    - part: "Módulos do curso"
+      chapters:
+        - modulos/01_deep_learning_pinns.qmd
+        - modulos/02_ia_generativa.qmd
+        - modulos/03_gnns_otimizacao_mpc.qmd
+        - modulos/04_mdo_aerodesign.qmd
+    - part: "Recursos e fechamento"
+      chapters:
+        - recursos.qmd
+        - referencias.qmd
+
+bibliography: references.bib
+
+execute:
+  freeze: auto
+  warning: false
+  message: false
+  echo: true
+
+jupyter: python3
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/styles/custom.scss]
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-summary: "Ver código Python"
+    code-copy: true
+    anchor-sections: true
+    df-print: paged
+  pdf:
+    documentclass: scrreprt
+    papersize: a4
+    pdf-engine: lualatex
+    geometry:
+      - top=30mm
+      - left=30mm
+      - bottom=25mm
+      - right=25mm
+    toc: true
+    number-sections: true
+    colorlinks: true
+    keep-tex: true
+    include-in-header:
+      - assets/tex/preamble.tex
+  epub:
+    toc: true

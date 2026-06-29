@@ -1,0 +1,93 @@
+# Módulo 1 — Deep Learning, MLPs e PINNs
+
+## 1. Objetivos de aprendizagem
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+- reconhecer o problema de engenharia associado ao módulo;
+- compreender a intuição da classe de modelo de IA apresentada;
+- identificar uma demonstração computacional mínima;
+- avaliar riscos de extrapolação, validação e consistência física;
+- localizar recursos públicos para aprofundamento.
+
+## 2. Problema de engenharia
+
+Predição e aproximação de respostas estruturais ou aerodinâmicas em problemas simplificados, especialmente quando há necessidade de combinar dados com restrições físicas.
+
+## 3. Classe de modelo de IA
+
+Perceptrons multicamadas, redes neurais profundas e redes neurais informadas pela física. O foco é compreender a progressão de MLPs para arquiteturas modernas e como PINNs incorporam resíduos de equações diferenciais na função de perda.
+
+## 4. Fundamentos conceituais
+
+MLP, função de ativação, treinamento por retropropagação, autograd, regularização, overfitting, modelos fundacionais e aprendizado físico-informado.
+
+## 5. Formulação matemática mínima
+
+Uma PINN pode ser vista como uma rede neural \(\hat{u}_\theta(x,t)\) treinada por uma função de perda composta:
+
+\[
+\mathcal{L}(\theta) =
+\lambda_d \mathcal{L}_{dados} +
+\lambda_f \mathcal{L}_{fisica} +
+\lambda_b \mathcal{L}_{contorno} +
+\lambda_i \mathcal{L}_{inicial}.
+\]
+
+A contribuição física geralmente envolve o resíduo de uma equação diferencial:
+
+\[
+r_\theta(x,t) = \mathcal{N}[\hat{u}_\theta](x,t),
+\]
+
+onde \(\mathcal{N}\) representa o operador diferencial do problema.
+
+## 6. Mapa de demonstração ao vivo
+
+| Passo | Ação em sala | Mensagem didática |
+|---:|---|---|
+| 1 | Abrir a página do módulo no GitHub Pages | Apresentar o problema de engenharia |
+| 2 | Abrir o notebook associado | Mostrar o fluxo computacional mínimo |
+| 3 | Executar ou comentar as células principais | Relacionar código, modelo e hipótese física |
+| 4 | Alterar um parâmetro simples | Evidenciar sensibilidade e limites do modelo |
+| 5 | Discutir validação | Evitar uso acrítico da IA em engenharia |
+
+## 7. Links para abrir durante a aula
+
+- PyTorch Documentation;
+- DeepXDE Documentation;
+- NASA Airfoil Self-Noise Dataset;
+- repositórios introdutórios de PINNs em PyTorch.
+
+## 8. Notebook associado
+
+> Notebook principal: `notebooks/01_mlp_pinn_pytorch.ipynb`
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.
+
+## 9. Cuidados de engenharia
+
+- Não interpretar baixa perda de treinamento como validade física geral;
+- verificar condições de contorno;
+- analisar extrapolação fora do domínio treinado;
+- comparar com solução analítica, numérica ou experimental quando disponível.
+
+## 10. Questões de discussão
+
+- Quando uma PINN é preferível a uma rede puramente orientada por dados?
+- Que riscos surgem quando a física é mal especificada?
+- Como escolher pesos entre dados, resíduo físico e condições de contorno?
+
+## 11. Possíveis projetos derivados
+
+- PINN para viga Euler-Bernoulli simplificada;
+- MLP para aproximação de coeficientes aerodinâmicos;
+- comparação entre regressão clássica, MLP e PINN.
+
+## 12. Leituras recomendadas
+
+- @goodfellow2016deep
+- @lecun2015deep
+- @raissi2019physics
+- @karniadakis2021physics
+- @brunton2022data

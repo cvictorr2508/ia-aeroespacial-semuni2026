@@ -1,0 +1,22 @@
+---
+title: "Abertura"
+subtitle: "Inteligência Artificial na Engenharia Aeroespacial — SEMUNI 2026"
+author: "Prof. Dr. Victor Rafael Rezende Celestino"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    incremental: false
+---
+
+## Objetivo
+
+Apresentar o escopo panorâmico-aplicado do minicurso.
+
+## Mensagem central
+
+IA como complemento à física, simulação e otimização em engenharia aeroespacial.
+
+## Transição
+
+Abrir o roteiro correspondente no GitHub Pages.

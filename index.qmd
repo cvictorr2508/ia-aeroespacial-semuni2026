@@ -1,0 +1,67 @@
+# Boas-vindas {.unnumbered}
+
+Este material organiza o minicurso **Inteligência Artificial na Engenharia Aeroespacial**, proposto para a **SEMUNI 2026 — FCTE/UnB**.
+
+O minicurso tem caráter **panorâmico-aplicado**: em quatro horas, seu propósito não é formar especialistas em cada arquitetura, mas apresentar uma visão integrada de como inteligência artificial, simulação, modelos substitutos, grafos e otimização podem apoiar problemas de engenharia aeroespacial.
+
+## Informações gerais
+
+| Item | Descrição |
+|---|---|
+| Evento | SEMUNI 2026 — Semana Universitária da FCTE/UnB |
+| Período previsto | 20 a 25 de setembro de 2026 |
+| Título | Inteligência Artificial na Engenharia Aeroespacial |
+| Carga horária | 4 horas |
+| Professor responsável | Prof. Dr. Victor Rafael Rezende Celestino |
+| Formato | Exposição dialogada, roteiro navegável, demonstrações computacionais e discussão de aplicações |
+| Natureza | Panorama aplicado sobre IA, simulação, otimização e projeto aeroespacial |
+
+## Síntese executiva
+
+A engenharia aeroespacial vem incorporando técnicas de aprendizado profundo, modelos generativos, redes neurais de grafo, simulação orientada por dados e otimização baseada em modelos. Essas técnicas ampliam a capacidade de modelar fenômenos, acelerar simulações, explorar alternativas de projeto e apoiar decisões em sistemas complexos, sem substituir os fundamentos físicos, matemáticos e experimentais da engenharia.
+
+O minicurso articula quatro eixos:
+
+1. **Deep Learning, MLPs e PINNs**;
+2. **IA generativa, dados sintéticos e modelos substitutos**;
+3. **GNNs, otimização combinatória, MINLP e MPC**;
+4. **IA em otimização multidisciplinar e AeroDesign**.
+
+## Público-alvo
+
+Estudantes de graduação e pós-graduação em Engenharia Aeroespacial, Engenharia Automotiva, Engenharia de Energia, Engenharia Eletrônica, Engenharia de Software, Computação, Ciência de Dados, Administração, Pesquisa Operacional e áreas afins; professores, pesquisadores e técnicos interessados na interseção entre inteligência artificial e aplicações aeroespaciais.
+
+## Pré-requisitos desejáveis
+
+- Noções básicas de cálculo, álgebra linear e física;
+- conhecimento introdutório de Python;
+- fundamentos de engenharia;
+- familiaridade inicial com aprendizado de máquina, embora não obrigatória.
+
+## Cronograma de 4 horas
+
+| Tempo | Bloco | Conteúdo principal |
+|---:|---|---|
+| 0:00–0:15 | Abertura | Motivação, escopo panorâmico-aplicado e mapa do repositório |
+| 0:15–1:00 | Módulo 1 | MLPs, deep learning, PINNs e demonstração em PyTorch/DeepXDE |
+| 1:00–2:00 | Módulo 2 | IA generativa, dados sintéticos, geometrias e surrogate models |
+| 2:00–3:00 | Módulo 3 | GNNs, grafos bipartidos, MINLP, MPC e PyTorch Geometric/DGL |
+| 3:00–3:50 | Módulo 4 | IA, MDO, OpenMDAO, OpenVSP e estudo inspirado no AeroDesign |
+| 3:50–4:00 | Fechamento | Síntese, bibliografia, repositório e oportunidades de projetos |
+
+## Regra operacional do curso
+
+Cada módulo terá **uma demonstração principal**. Conteúdos adicionais serão apresentados como leituras, desafios e extensões para estudo posterior.
+
+## Como navegar
+
+Use o menu lateral para acessar os quatro módulos. Em cada módulo, procure as seções:
+
+- problema de engenharia;
+- classe de modelo de IA;
+- fundamentos mínimos;
+- roteiro de demonstração ao vivo;
+- links para abrir durante a aula;
+- notebook associado;
+- cuidados de engenharia;
+- projetos derivados.

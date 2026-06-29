@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Se você utilizar este material didático ou código em sua pesquisa, atividade docente ou projeto de extensão, por favor cite-o conforme abaixo."
+title: "Inteligência Artificial na Engenharia Aeroespacial: material didático de extensão para a SEMUNI 2026"
+version: "1.0.0"
+date-released: "2026-09-20"
+authors:
+  - family-names: "Rezende Celestino"
+    given-names: "Victor Rafael"
+repository-code: "https://github.com/SEU-USUARIO/ia-aeroespacial-semuni2026"
+url: "https://SEU-USUARIO.github.io/ia-aeroespacial-semuni2026/"
+license: "CC-BY-4.0 AND MIT"
+keywords:
+  - inteligencia-artificial
+  - engenharia-aeroespacial
+  - deep-learning
+  - physics-informed-neural-networks
+  - graph-neural-networks
+  - multidisciplinary-design-optimization
+  - open-educational-resources

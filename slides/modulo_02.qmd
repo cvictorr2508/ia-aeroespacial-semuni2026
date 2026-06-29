@@ -1,0 +1,22 @@
+---
+title: "Módulo 2 — IA Generativa"
+subtitle: "Inteligência Artificial na Engenharia Aeroespacial — SEMUNI 2026"
+author: "Prof. Dr. Victor Rafael Rezende Celestino"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    incremental: false
+---
+
+## Objetivo
+
+Sintetizar IA generativa, dados sintéticos e modelos substitutos.
+
+## Mensagem central
+
+Modelos generativos e substitutos apoiam exploração de espaços de projeto, mas exigem validação.
+
+## Transição
+
+Abrir o roteiro correspondente no GitHub Pages.
