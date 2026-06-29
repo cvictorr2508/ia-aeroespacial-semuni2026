@@ -1,0 +1,21 @@
+# Normalização geral de arquivos de texto
+* text=auto
+
+# Arquivos de configuração e código devem usar LF
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.qmd  text eol=lf
+*.md   text eol=lf
+*.bib  text eol=lf
+*.tex  text eol=lf
+*.py   text eol=lf
+*.sh   text eol=lf
+*.ipynb text eol=lf
+
+# Arquivos binários
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
