@@ -1,0 +1,749 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "",
+    "text": "Boas-vindas\nEste material organiza o minicurso Inteligência Artificial na Engenharia Aeroespacial, proposto para a SEMUNI 2026 — FCTE/UnB.\nO minicurso tem caráter panorâmico-aplicado: em quatro horas, seu propósito não é formar especialistas em cada arquitetura, mas apresentar uma visão integrada de como inteligência artificial, simulação, modelos substitutos, grafos e otimização podem apoiar problemas de engenharia aeroespacial.",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "index.html#informações-gerais",
+    "href": "index.html#informações-gerais",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "Informações gerais",
+    "text": "Informações gerais\n\n\n\n\n\n\n\nItem\nDescrição\n\n\n\n\nEvento\nSEMUNI 2026 — Semana Universitária da FCTE/UnB\n\n\nPeríodo previsto\n20 a 25 de setembro de 2026\n\n\nTítulo\nInteligência Artificial na Engenharia Aeroespacial\n\n\nCarga horária\n4 horas\n\n\nProfessor responsável\nProf. Dr. Victor Rafael Rezende Celestino\n\n\nFormato\nExposição dialogada, roteiro navegável, demonstrações computacionais e discussão de aplicações\n\n\nNatureza\nPanorama aplicado sobre IA, simulação, otimização e projeto aeroespacial",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "index.html#síntese-executiva",
+    "href": "index.html#síntese-executiva",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "Síntese executiva",
+    "text": "Síntese executiva\nA engenharia aeroespacial vem incorporando técnicas de aprendizado profundo, modelos generativos, redes neurais de grafo, simulação orientada por dados e otimização baseada em modelos. Essas técnicas ampliam a capacidade de modelar fenômenos, acelerar simulações, explorar alternativas de projeto e apoiar decisões em sistemas complexos, sem substituir os fundamentos físicos, matemáticos e experimentais da engenharia.\nO minicurso articula quatro eixos:\n\nDeep Learning, MLPs e PINNs;\nIA generativa, dados sintéticos e modelos substitutos;\nGNNs, otimização combinatória, MINLP e MPC;\nIA em otimização multidisciplinar e AeroDesign.",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "index.html#público-alvo",
+    "href": "index.html#público-alvo",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "Público-alvo",
+    "text": "Público-alvo\nEstudantes de graduação e pós-graduação em Engenharia Aeroespacial, Engenharia Automotiva, Engenharia de Energia, Engenharia Eletrônica, Engenharia de Software, Computação, Ciência de Dados, Administração, Pesquisa Operacional e áreas afins; professores, pesquisadores e técnicos interessados na interseção entre inteligência artificial e aplicações aeroespaciais.",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "index.html#pré-requisitos-desejáveis",
+    "href": "index.html#pré-requisitos-desejáveis",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "Pré-requisitos desejáveis",
+    "text": "Pré-requisitos desejáveis\n\nNoções básicas de cálculo, álgebra linear e física;\nconhecimento introdutório de Python;\nfundamentos de engenharia;\nfamiliaridade inicial com aprendizado de máquina, embora não obrigatória.",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "index.html#cronograma-de-4-horas",
+    "href": "index.html#cronograma-de-4-horas",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "Cronograma de 4 horas",
+    "text": "Cronograma de 4 horas\n\n\n\n\n\n\n\n\nTempo\nBloco\nConteúdo principal\n\n\n\n\n0:00–0:15\nAbertura\nMotivação, escopo panorâmico-aplicado e mapa do repositório\n\n\n0:15–1:00\nMódulo 1\nMLPs, deep learning, PINNs e demonstração em PyTorch/DeepXDE\n\n\n1:00–2:00\nMódulo 2\nIA generativa, dados sintéticos, geometrias e surrogate models\n\n\n2:00–3:00\nMódulo 3\nGNNs, grafos bipartidos, MINLP, MPC e PyTorch Geometric/DGL\n\n\n3:00–3:50\nMódulo 4\nIA, MDO, OpenMDAO, OpenVSP e estudo inspirado no AeroDesign\n\n\n3:50–4:00\nFechamento\nSíntese, bibliografia, repositório e oportunidades de projetos",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "index.html#regra-operacional-do-curso",
+    "href": "index.html#regra-operacional-do-curso",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "Regra operacional do curso",
+    "text": "Regra operacional do curso\nCada módulo terá uma demonstração principal. Conteúdos adicionais serão apresentados como leituras, desafios e extensões para estudo posterior.",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "index.html#como-navegar",
+    "href": "index.html#como-navegar",
+    "title": "Inteligência Artificial na Engenharia Aeroespacial",
+    "section": "Como navegar",
+    "text": "Como navegar\nUse o menu lateral para acessar os quatro módulos. Em cada módulo, procure as seções:\n\nproblema de engenharia;\nclasse de modelo de IA;\nfundamentos mínimos;\nroteiro de demonstração ao vivo;\nlinks para abrir durante a aula;\nnotebook associado;\ncuidados de engenharia;\nprojetos derivados.",
+    "crumbs": [
+      "Boas-vindas"
+    ]
+  },
+  {
+    "objectID": "apresentacao.html",
+    "href": "apresentacao.html",
+    "title": "1  Apresentação e filosofia do curso",
+    "section": "",
+    "text": "1.1 Tese central\nA inteligência artificial deve ser compreendida como acelerador, aproximador e organizador de conhecimento em engenharia aeroespacial, não como substituta dos princípios físicos, matemáticos e experimentais que sustentam a engenharia.\nEm problemas aeroespaciais, modelos de IA podem:\nContudo, esses modelos devem ser avaliados com rigor quanto a:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Apresentação e filosofia do curso</span>"
+    ]
+  },
+  {
+    "objectID": "apresentacao.html#tese-central",
+    "href": "apresentacao.html#tese-central",
+    "title": "1  Apresentação e filosofia do curso",
+    "section": "",
+    "text": "aproximar funções de alto custo computacional;\napoiar a exploração de espaços de projeto;\nreduzir o tempo de simulações preliminares;\nextrair padrões de dados experimentais, numéricos ou operacionais;\nrepresentar sistemas complexos por grafos;\napoiar decisões em otimização e controle.\n\n\n\ndomínio de validade;\nextrapolação;\nincerteza;\nconsistência física;\ninterpretabilidade;\nrobustez computacional;\nrastreabilidade dos dados e hipóteses.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Apresentação e filosofia do curso</span>"
+    ]
+  },
+  {
+    "objectID": "apresentacao.html#diretriz-pedagógica-dos-módulos",
+    "href": "apresentacao.html#diretriz-pedagógica-dos-módulos",
+    "title": "1  Apresentação e filosofia do curso",
+    "section": "1.2 Diretriz pedagógica dos módulos",
+    "text": "1.2 Diretriz pedagógica dos módulos\nCada módulo será guiado por três perguntas:\n\nQual problema de engenharia está sendo tratado?\nQual classe de modelo de IA é adequada e por quê?\nQuais cuidados de validação, extrapolação e consistência física devem ser observados?\n\nEssa estrutura busca conectar intuição física, formulação matemática e demonstração computacional.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Apresentação e filosofia do curso</span>"
+    ]
+  },
+  {
+    "objectID": "apresentacao.html#escopo-e-limites",
+    "href": "apresentacao.html#escopo-e-limites",
+    "title": "1  Apresentação e filosofia do curso",
+    "section": "1.3 Escopo e limites",
+    "text": "1.3 Escopo e limites\nEste minicurso é uma introdução aplicada. Em quatro horas, não é realista treinar profundamente os participantes em PyTorch, DeepXDE, PyTorch Geometric, DGL, OpenMDAO, OpenAeroStruct e OpenVSP. O objetivo é oferecer um mapa conceitual, um conjunto de exemplos e um repositório público para aprofundamento.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Apresentação e filosofia do curso</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html",
+    "href": "modulos/01_deep_learning_pinns.html",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "",
+    "text": "2.1 1. Objetivos de aprendizagem\nAo final deste módulo, espera-se que o participante seja capaz de:",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#objetivos-de-aprendizagem",
+    "href": "modulos/01_deep_learning_pinns.html#objetivos-de-aprendizagem",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "",
+    "text": "reconhecer o problema de engenharia associado ao módulo;\ncompreender a intuição da classe de modelo de IA apresentada;\nidentificar uma demonstração computacional mínima;\navaliar riscos de extrapolação, validação e consistência física;\nlocalizar recursos públicos para aprofundamento.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#problema-de-engenharia",
+    "href": "modulos/01_deep_learning_pinns.html#problema-de-engenharia",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.2 2. Problema de engenharia",
+    "text": "2.2 2. Problema de engenharia\nPredição e aproximação de respostas estruturais ou aerodinâmicas em problemas simplificados, especialmente quando há necessidade de combinar dados com restrições físicas.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#classe-de-modelo-de-ia",
+    "href": "modulos/01_deep_learning_pinns.html#classe-de-modelo-de-ia",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.3 3. Classe de modelo de IA",
+    "text": "2.3 3. Classe de modelo de IA\nPerceptrons multicamadas, redes neurais profundas e redes neurais informadas pela física. O foco é compreender a progressão de MLPs para arquiteturas modernas e como PINNs incorporam resíduos de equações diferenciais na função de perda.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#fundamentos-conceituais",
+    "href": "modulos/01_deep_learning_pinns.html#fundamentos-conceituais",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.4 4. Fundamentos conceituais",
+    "text": "2.4 4. Fundamentos conceituais\nMLP, função de ativação, treinamento por retropropagação, autograd, regularização, overfitting, modelos fundacionais e aprendizado físico-informado.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#formulação-matemática-mínima",
+    "href": "modulos/01_deep_learning_pinns.html#formulação-matemática-mínima",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.5 5. Formulação matemática mínima",
+    "text": "2.5 5. Formulação matemática mínima\nUma PINN pode ser vista como uma rede neural (\\(\\hat{u}_\\theta(x,t)\\)) treinada por uma função de perda composta:\n\\[\n\\mathcal{L}(\\theta) =\n\\lambda_d \\mathcal{L}_{dados} +\n\\lambda_f \\mathcal{L}_{fisica} +\n\\lambda_b \\mathcal{L}_{contorno} +\n\\lambda_i \\mathcal{L}_{inicial}.\n\\]\nA contribuição física geralmente envolve o resíduo de uma equação diferencial:\n\\[\nr_\\theta(x,t) = \\mathcal{N}[\\hat{u}_\\theta](x,t),\n\\]\nonde (\\(\\mathcal{N}\\)) representa o operador diferencial do problema.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#mapa-de-demonstração-ao-vivo",
+    "href": "modulos/01_deep_learning_pinns.html#mapa-de-demonstração-ao-vivo",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.6 6. Mapa de demonstração ao vivo",
+    "text": "2.6 6. Mapa de demonstração ao vivo\n\n\n\n\n\n\n\n\nPasso\nAção em sala\nMensagem didática\n\n\n\n\n1\nAbrir a página do módulo no GitHub Pages\nApresentar o problema de engenharia\n\n\n2\nAbrir o notebook associado\nMostrar o fluxo computacional mínimo\n\n\n3\nExecutar ou comentar as células principais\nRelacionar código, modelo e hipótese física\n\n\n4\nAlterar um parâmetro simples\nEvidenciar sensibilidade e limites do modelo\n\n\n5\nDiscutir validação\nEvitar uso acrítico da IA em engenharia",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#links-para-abrir-durante-a-aula",
+    "href": "modulos/01_deep_learning_pinns.html#links-para-abrir-durante-a-aula",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.7 7. Links para abrir durante a aula",
+    "text": "2.7 7. Links para abrir durante a aula\n\nPyTorch Documentation;\nDeepXDE Documentation;\nNASA Airfoil Self-Noise Dataset;\nrepositórios introdutórios de PINNs em PyTorch.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#notebook-associado",
+    "href": "modulos/01_deep_learning_pinns.html#notebook-associado",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.8 8. Notebook associado",
+    "text": "2.8 8. Notebook associado\n\nNotebook principal: notebooks/01_mlp_pinn_pytorch.ipynb\n\nQuando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#cuidados-de-engenharia",
+    "href": "modulos/01_deep_learning_pinns.html#cuidados-de-engenharia",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.9 9. Cuidados de engenharia",
+    "text": "2.9 9. Cuidados de engenharia\n\nNão interpretar baixa perda de treinamento como validade física geral;\nverificar condições de contorno;\nanalisar extrapolação fora do domínio treinado;\ncomparar com solução analítica, numérica ou experimental quando disponível.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#questões-de-discussão",
+    "href": "modulos/01_deep_learning_pinns.html#questões-de-discussão",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.10 10. Questões de discussão",
+    "text": "2.10 10. Questões de discussão\n\nQuando uma PINN é preferível a uma rede puramente orientada por dados?\nQue riscos surgem quando a física é mal especificada?\nComo escolher pesos entre dados, resíduo físico e condições de contorno?",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#possíveis-projetos-derivados",
+    "href": "modulos/01_deep_learning_pinns.html#possíveis-projetos-derivados",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.11 11. Possíveis projetos derivados",
+    "text": "2.11 11. Possíveis projetos derivados\n\nPINN para viga Euler-Bernoulli simplificada;\nMLP para aproximação de coeficientes aerodinâmicos;\ncomparação entre regressão clássica, MLP e PINN.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/01_deep_learning_pinns.html#leituras-recomendadas",
+    "href": "modulos/01_deep_learning_pinns.html#leituras-recomendadas",
+    "title": "2  Módulo 1 — Deep Learning, MLPs e PINNs",
+    "section": "2.12 12. Leituras recomendadas",
+    "text": "2.12 12. Leituras recomendadas\n\nGoodfellow et al. (2016)\nLeCun et al. (2015)\nRaissi et al. (2019)\nKarniadakis et al. (2021)\nBrunton e Kutz (2022)\n\n\n\n\n\nBrunton, Steven L., e J. Nathan Kutz. 2022. Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control. 2º ed. Cambridge University Press.\n\n\nGoodfellow, Ian, Yoshua Bengio, e Aaron Courville. 2016. Deep Learning. MIT Press.\n\n\nKarniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris Perdikaris, Sifan Wang, e Liu Yang. 2021. “Physics-informed machine learning”. Nature Reviews Physics 3: 422–40.\n\n\nLeCun, Yann, Yoshua Bengio, e Geoffrey Hinton. 2015. “Deep learning”. Nature 521: 436–44.\n\n\nRaissi, Maziar, Paris Perdikaris, e George E. Karniadakis. 2019. “Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations”. Journal of Computational Physics 378: 686–707.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 1 — Deep Learning, MLPs e PINNs</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html",
+    "href": "modulos/02_ia_generativa.html",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "",
+    "text": "3.1 1. Objetivos de aprendizagem\nAo final deste módulo, espera-se que o participante seja capaz de:",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#objetivos-de-aprendizagem",
+    "href": "modulos/02_ia_generativa.html#objetivos-de-aprendizagem",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "",
+    "text": "reconhecer o problema de engenharia associado ao módulo;\ncompreender a intuição da classe de modelo de IA apresentada;\nidentificar uma demonstração computacional mínima;\navaliar riscos de extrapolação, validação e consistência física;\nlocalizar recursos públicos para aprofundamento.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#problema-de-engenharia",
+    "href": "modulos/02_ia_generativa.html#problema-de-engenharia",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.2 2. Problema de engenharia",
+    "text": "3.2 2. Problema de engenharia\nGeração de dados sintéticos, exploração de geometrias e construção de modelos substitutos para reduzir custo computacional em simulações aeroespaciais.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#classe-de-modelo-de-ia",
+    "href": "modulos/02_ia_generativa.html#classe-de-modelo-de-ia",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.3 3. Classe de modelo de IA",
+    "text": "3.3 3. Classe de modelo de IA\nModelos generativos, incluindo VAEs, GANs, modelos de difusão, modelos autorregressivos e mecanismos de atenção. O módulo enfatiza também surrogate models como aproximadores de simulações caras.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#fundamentos-conceituais",
+    "href": "modulos/02_ia_generativa.html#fundamentos-conceituais",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.4 4. Fundamentos conceituais",
+    "text": "3.4 4. Fundamentos conceituais\nDistribuição de dados, espaço latente, codificador, decodificador, discriminador, difusão, atenção, plausibilidade física, aumento de dados e aprendizado ativo.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#formulação-matemática-mínima",
+    "href": "modulos/02_ia_generativa.html#formulação-matemática-mínima",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.5 5. Formulação matemática mínima",
+    "text": "3.5 5. Formulação matemática mínima\nUm modelo substituto busca aproximar uma função de alto custo:\n\\[\ny = f(x) \\quad \\Rightarrow \\quad \\hat{y} = \\hat{f}_\\theta(x),\n\\]\nem que (\\(f\\)) pode representar uma simulação CFD, análise estrutural ou cálculo de desempenho.\nEm um VAE, o treinamento combina reconstrução e regularização probabilística:\n\\[\n\\mathcal{L} =\n\\mathbb{E}_{q_\\phi(z|x)}[\\log p_\\theta(x|z)] -\nD_{KL}(q_\\phi(z|x)\\|p(z)).\n\\]",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#mapa-de-demonstração-ao-vivo",
+    "href": "modulos/02_ia_generativa.html#mapa-de-demonstração-ao-vivo",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.6 6. Mapa de demonstração ao vivo",
+    "text": "3.6 6. Mapa de demonstração ao vivo\n\n\n\n\n\n\n\n\nPasso\nAção em sala\nMensagem didática\n\n\n\n\n1\nAbrir a página do módulo no GitHub Pages\nApresentar o problema de engenharia\n\n\n2\nAbrir o notebook associado\nMostrar o fluxo computacional mínimo\n\n\n3\nExecutar ou comentar as células principais\nRelacionar código, modelo e hipótese física\n\n\n4\nAlterar um parâmetro simples\nEvidenciar sensibilidade e limites do modelo\n\n\n5\nDiscutir validação\nEvitar uso acrítico da IA em engenharia",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#links-para-abrir-durante-a-aula",
+    "href": "modulos/02_ia_generativa.html#links-para-abrir-durante-a-aula",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.7 7. Links para abrir durante a aula",
+    "text": "3.7 7. Links para abrir durante a aula\n\nNASA Airfoil Self-Noise Dataset;\nUIUC Airfoil Data Site;\nShapeNet / ShapeNet Part;\nPyTorch Documentation;\nexemplos de surrogate modeling em Scikit-learn e PyTorch.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#notebook-associado",
+    "href": "modulos/02_ia_generativa.html#notebook-associado",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.8 8. Notebook associado",
+    "text": "3.8 8. Notebook associado\n\nNotebook principal: notebooks/02_surrogate_dados_sinteticos.ipynb\n\nQuando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#cuidados-de-engenharia",
+    "href": "modulos/02_ia_generativa.html#cuidados-de-engenharia",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.9 9. Cuidados de engenharia",
+    "text": "3.9 9. Cuidados de engenharia\n\nDados sintéticos não substituem validação experimental;\ngeometrias geradas precisam respeitar restrições físicas e operacionais;\nsurrogate models podem falhar severamente fora do domínio de treinamento;\nmétricas estatísticas devem ser combinadas com julgamento de engenharia.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#questões-de-discussão",
+    "href": "modulos/02_ia_generativa.html#questões-de-discussão",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.10 10. Questões de discussão",
+    "text": "3.10 10. Questões de discussão\n\nComo validar dados sintéticos em engenharia?\nQuando um surrogate model é suficiente para decisão preliminar?\nQue tipo de erro é aceitável em projeto conceitual?",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#possíveis-projetos-derivados",
+    "href": "modulos/02_ia_generativa.html#possíveis-projetos-derivados",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.11 11. Possíveis projetos derivados",
+    "text": "3.11 11. Possíveis projetos derivados\n\nmodelo substituto para ruído de aerofólio;\ngeração de amostras sintéticas de configurações de asa;\ncomparação entre Gaussian Process, Random Forest e MLP para regressão aerodinâmica.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/02_ia_generativa.html#leituras-recomendadas",
+    "href": "modulos/02_ia_generativa.html#leituras-recomendadas",
+    "title": "3  Módulo 2 — IA generativa, dados sintéticos e modelos substitutos",
+    "section": "3.12 12. Leituras recomendadas",
+    "text": "3.12 12. Leituras recomendadas\n\nGoodfellow et al. (2014)\nKingma e Welling (2013)\nHo et al. (2020)\nRombach et al. (2022)\nForrester et al. (2008)\n\n\n\n\n\nForrester, Alexander, Andras Sobester, e Andy Keane. 2008. Engineering Design via Surrogate Modelling: A Practical Guide. Wiley.\n\n\nGoodfellow, Ian, Jean Pouget-Abadie, Mehdi Mirza, et al. 2014. “Generative Adversarial Nets”. Advances in Neural Information Processing Systems.\n\n\nHo, Jonathan, Ajay Jain, e Pieter Abbeel. 2020. “Denoising Diffusion Probabilistic Models”. Advances in Neural Information Processing Systems.\n\n\nKingma, Diederik P., e Max Welling. 2013. Auto-Encoding Variational Bayes. https://arxiv.org/abs/1312.6114.\n\n\nRombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, e Bjorn Ommer. 2022. “High-Resolution Image Synthesis with Latent Diffusion Models”. IEEE/CVF Conference on Computer Vision and Pattern Recognition, 10684–95.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 2 — IA generativa, dados sintéticos e modelos substitutos</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html",
+    "href": "modulos/03_gnns_otimizacao_mpc.html",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "",
+    "text": "4.1 1. Objetivos de aprendizagem\nAo final deste módulo, espera-se que o participante seja capaz de:",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#objetivos-de-aprendizagem",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#objetivos-de-aprendizagem",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "",
+    "text": "reconhecer o problema de engenharia associado ao módulo;\ncompreender a intuição da classe de modelo de IA apresentada;\nidentificar uma demonstração computacional mínima;\navaliar riscos de extrapolação, validação e consistência física;\nlocalizar recursos públicos para aprofundamento.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#problema-de-engenharia",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#problema-de-engenharia",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.2 2. Problema de engenharia",
+    "text": "4.2 2. Problema de engenharia\nRepresentação de sistemas complexos, malhas, componentes, restrições e problemas de otimização por meio de grafos, com aplicações em otimização combinatória, MINLP e controle preditivo.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#classe-de-modelo-de-ia",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#classe-de-modelo-de-ia",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.3 3. Classe de modelo de IA",
+    "text": "4.3 3. Classe de modelo de IA\nRedes neurais de grafo, grafos bipartidos, embeddings e message passing. O módulo apresenta como problemas de otimização podem ser representados por variáveis, restrições e relações estruturais.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#fundamentos-conceituais",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#fundamentos-conceituais",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.4 4. Fundamentos conceituais",
+    "text": "4.4 4. Fundamentos conceituais\nNós, arestas, atributos, grafos bipartidos, embeddings, agregação de vizinhança, message passing, warm start, predição de variáveis ativas e suporte a decisões em horizonte móvel.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#formulação-matemática-mínima",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#formulação-matemática-mínima",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.5 5. Formulação matemática mínima",
+    "text": "4.5 5. Formulação matemática mínima\nEm uma GNN, uma etapa genérica de message passing pode ser escrita como:\n\\[\nm_i^{(k)} = \\sum_{j \\in \\mathcal{N}(i)}\n\\phi^{(k)}(h_i^{(k)}, h_j^{(k)}, e_{ij}),\n\\]\n\\[\nh_i^{(k+1)} =\n\\psi^{(k)}(h_i^{(k)}, m_i^{(k)}),\n\\]\nonde (\\(h_i\\)) é a representação do nó, (\\(e_{ij}\\)) representa atributos da aresta e (\\(\\mathcal{N}(i)\\)) é a vizinhança de (\\(i\\)).",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#mapa-de-demonstração-ao-vivo",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#mapa-de-demonstração-ao-vivo",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.6 6. Mapa de demonstração ao vivo",
+    "text": "4.6 6. Mapa de demonstração ao vivo\n\n\n\n\n\n\n\n\nPasso\nAção em sala\nMensagem didática\n\n\n\n\n1\nAbrir a página do módulo no GitHub Pages\nApresentar o problema de engenharia\n\n\n2\nAbrir o notebook associado\nMostrar o fluxo computacional mínimo\n\n\n3\nExecutar ou comentar as células principais\nRelacionar código, modelo e hipótese física\n\n\n4\nAlterar um parâmetro simples\nEvidenciar sensibilidade e limites do modelo\n\n\n5\nDiscutir validação\nEvitar uso acrítico da IA em engenharia",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#links-para-abrir-durante-a-aula",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#links-para-abrir-durante-a-aula",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.7 7. Links para abrir durante a aula",
+    "text": "4.7 7. Links para abrir durante a aula\n\nPyTorch Geometric Documentation;\nDGL Documentation;\nMIPLIB;\nMILPBench;\nbenchmarks de facility location;\nmateriais introdutórios sobre aprendizado para otimização.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#notebook-associado",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#notebook-associado",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.8 8. Notebook associado",
+    "text": "4.8 8. Notebook associado\n\nNotebook principal: notebooks/03_gnn_bipartite_minlp.ipynb\n\nQuando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#cuidados-de-engenharia",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#cuidados-de-engenharia",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.9 9. Cuidados de engenharia",
+    "text": "4.9 9. Cuidados de engenharia\n\nGNNs podem capturar padrões estruturais, mas não garantem otimalidade;\ndecisões geradas por IA devem ser verificadas por solucionadores ou regras de viabilidade;\nbenchmarks de otimização nem sempre representam sistemas aeroespaciais reais;\nMPC exige tratamento rigoroso de estabilidade, restrições e robustez.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#questões-de-discussão",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#questões-de-discussão",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.10 10. Questões de discussão",
+    "text": "4.10 10. Questões de discussão\n\nComo representar um problema de otimização como grafo bipartido?\nGNN deve substituir ou auxiliar o solver?\nComo validar uma política aproximada em MPC?",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#possíveis-projetos-derivados",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#possíveis-projetos-derivados",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.11 11. Possíveis projetos derivados",
+    "text": "4.11 11. Possíveis projetos derivados\n\ngrafo bipartido para pequeno problema MILP;\nclassificação de variáveis candidatas a zero/um;\nwarm start orientado por aprendizado;\nGNN para rede simplificada de componentes aeroespaciais.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/03_gnns_otimizacao_mpc.html#leituras-recomendadas",
+    "href": "modulos/03_gnns_otimizacao_mpc.html#leituras-recomendadas",
+    "title": "4  Módulo 3 — GNNs, otimização, MINLP e MPC",
+    "section": "4.12 12. Leituras recomendadas",
+    "text": "4.12 12. Leituras recomendadas\n\nKipf e Welling (2017)\nGilmer et al. (2017)\nBattaglia et al. (2018)\nFey e Lenssen (2019)\nZhou et al. (2020)\nRawlings et al. (2017)\n\n\n\n\n\nBattaglia, Peter W., Jessica B. Hamrick, Victor Bapst, et al. 2018. Relational inductive biases, deep learning, and graph networks. https://arxiv.org/abs/1806.01261.\n\n\nFey, Matthias, e Jan Eric Lenssen. 2019. “Fast Graph Representation Learning with PyTorch Geometric”. ICLR Workshop on Representation Learning on Graphs and Manifolds.\n\n\nGilmer, Justin, Samuel S. Schoenholz, Patrick F. Riley, Oriol Vinyals, e George E. Dahl. 2017. “Neural Message Passing for Quantum Chemistry”. International Conference on Machine Learning, 1263–72.\n\n\nKipf, Thomas N., e Max Welling. 2017. “Semi-Supervised Classification with Graph Convolutional Networks”. International Conference on Learning Representations.\n\n\nRawlings, James B., David Q. Mayne, e Moritz Diehl. 2017. Model Predictive Control: Theory, Computation, and Design. Nob Hill Publishing.\n\n\nZhou, Jie, Ganqu Cui, Shengding Hu, et al. 2020. “Graph neural networks: A review of methods and applications”. AI Open 1: 57–81.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 3 — GNNs, otimização, MINLP e MPC</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html",
+    "href": "modulos/04_mdo_aerodesign.html",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "",
+    "text": "5.1 1. Objetivos de aprendizagem\nAo final deste módulo, espera-se que o participante seja capaz de:",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#objetivos-de-aprendizagem",
+    "href": "modulos/04_mdo_aerodesign.html#objetivos-de-aprendizagem",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "",
+    "text": "reconhecer o problema de engenharia associado ao módulo;\ncompreender a intuição da classe de modelo de IA apresentada;\nidentificar uma demonstração computacional mínima;\navaliar riscos de extrapolação, validação e consistência física;\nlocalizar recursos públicos para aprofundamento.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#problema-de-engenharia",
+    "href": "modulos/04_mdo_aerodesign.html#problema-de-engenharia",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.2 2. Problema de engenharia",
+    "text": "5.2 2. Problema de engenharia\nProjeto preliminar de aeronaves de pequeno porte com disciplinas acopladas: aerodinâmica, estruturas, massa, propulsão, desempenho, estabilidade e restrições operacionais.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#classe-de-modelo-de-ia",
+    "href": "modulos/04_mdo_aerodesign.html#classe-de-modelo-de-ia",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.3 3. Classe de modelo de IA",
+    "text": "5.3 3. Classe de modelo de IA\nModelos substitutos, otimização bayesiana, aprendizado ativo e integração com frameworks de otimização multidisciplinar, especialmente OpenMDAO e ferramentas de geometria conceitual.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#fundamentos-conceituais",
+    "href": "modulos/04_mdo_aerodesign.html#fundamentos-conceituais",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.4 4. Fundamentos conceituais",
+    "text": "5.4 4. Fundamentos conceituais\nVariáveis de projeto, funções objetivo, restrições, disciplinas acopladas, análise de sensibilidade, metamodelos, trade-offs e busca em espaços de configuração.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#formulação-matemática-mínima",
+    "href": "modulos/04_mdo_aerodesign.html#formulação-matemática-mínima",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.5 5. Formulação matemática mínima",
+    "text": "5.5 5. Formulação matemática mínima\nUm problema MDO simplificado pode ser escrito como:\n\\[\n\\min_{x} \\; F(x)\n\\]\nsujeito a:\n\\[\ng_i(x) \\leq 0,\\quad i=1,\\ldots,m,\n\\]\n\\[\nh_j(x) = 0,\\quad j=1,\\ldots,p,\n\\]\nem que (\\(x\\)) representa variáveis de projeto, (\\(F(x)\\)) é a função objetivo e (\\(g_i\\), \\(h_j\\)) representam restrições de engenharia.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#mapa-de-demonstração-ao-vivo",
+    "href": "modulos/04_mdo_aerodesign.html#mapa-de-demonstração-ao-vivo",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.6 6. Mapa de demonstração ao vivo",
+    "text": "5.6 6. Mapa de demonstração ao vivo\n\n\n\n\n\n\n\n\nPasso\nAção em sala\nMensagem didática\n\n\n\n\n1\nAbrir a página do módulo no GitHub Pages\nApresentar o problema de engenharia\n\n\n2\nAbrir o notebook associado\nMostrar o fluxo computacional mínimo\n\n\n3\nExecutar ou comentar as células principais\nRelacionar código, modelo e hipótese física\n\n\n4\nAlterar um parâmetro simples\nEvidenciar sensibilidade e limites do modelo\n\n\n5\nDiscutir validação\nEvitar uso acrítico da IA em engenharia",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#links-para-abrir-durante-a-aula",
+    "href": "modulos/04_mdo_aerodesign.html#links-para-abrir-durante-a-aula",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.7 7. Links para abrir durante a aula",
+    "text": "5.7 7. Links para abrir durante a aula\n\nOpenMDAO Documentation;\nOpenAeroStruct Documentation;\nOpenVSP Documentation;\nUIUC Airfoil Data Site;\nmateriais públicos de AeroDesign e projeto conceitual de aeronaves.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#notebook-associado",
+    "href": "modulos/04_mdo_aerodesign.html#notebook-associado",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.8 8. Notebook associado",
+    "text": "5.8 8. Notebook associado\n\nNotebook principal: notebooks/04_mdo_aerodesign_openmdao.ipynb\n\nQuando o repositório estiver publicado no GitHub, este espaço receberá o botão direto para abertura no Google Colab.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#cuidados-de-engenharia",
+    "href": "modulos/04_mdo_aerodesign.html#cuidados-de-engenharia",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.9 9. Cuidados de engenharia",
+    "text": "5.9 9. Cuidados de engenharia\n\nModelos preliminares devem ser tratados como apoio à decisão, não como certificação;\nacoplamentos entre disciplinas podem gerar efeitos não intuitivos;\nrestrições estruturais, operacionais e de segurança devem prevalecer sobre ganho de função objetivo;\notimização sem validação pode produzir soluções inviáveis.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#questões-de-discussão",
+    "href": "modulos/04_mdo_aerodesign.html#questões-de-discussão",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.10 10. Questões de discussão",
+    "text": "5.10 10. Questões de discussão\n\nComo definir variáveis de projeto relevantes para uma aeronave de pequeno porte?\nQual é o papel de um surrogate model em MDO?\nComo lidar com trade-offs entre carga paga, decolagem, massa e desempenho aerodinâmico?",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#possíveis-projetos-derivados",
+    "href": "modulos/04_mdo_aerodesign.html#possíveis-projetos-derivados",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.11 11. Possíveis projetos derivados",
+    "text": "5.11 11. Possíveis projetos derivados\n\nMDO simplificado de asa para AeroDesign;\nsurrogate model para estimar carga paga;\nestudo de sensibilidade de alongamento e área de asa;\nintegração OpenVSP–OpenMDAO em projeto conceitual.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/04_mdo_aerodesign.html#leituras-recomendadas",
+    "href": "modulos/04_mdo_aerodesign.html#leituras-recomendadas",
+    "title": "5  Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign",
+    "section": "5.12 12. Leituras recomendadas",
+    "text": "5.12 12. Leituras recomendadas\n\nMartins e Ning (2021)\nGray et al. (2019)\nJasa et al. (2018)\nForrester et al. (2008)\nBrunton e Kutz (2022)\n\n\n\n\n\nBrunton, Steven L., e J. Nathan Kutz. 2022. Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control. 2º ed. Cambridge University Press.\n\n\nForrester, Alexander, Andras Sobester, e Andy Keane. 2008. Engineering Design via Surrogate Modelling: A Practical Guide. Wiley.\n\n\nGray, Justin S., John T. Hwang, Joaquim R. R. A. Martins, Kenneth T. Moore, e Bret A. Naylor. 2019. “OpenMDAO: An open-source framework for multidisciplinary design, analysis, and optimization”. Structural and Multidisciplinary Optimization 59: 1075–104.\n\n\nJasa, John P., John T. Hwang, e Joaquim R. R. A. Martins. 2018. “Open-source coupled aerostructural optimization using Python”. Structural and Multidisciplinary Optimization 57: 1815–27.\n\n\nMartins, Joaquim R. R. A., e Andrew Ning. 2021. Engineering Design Optimization. Cambridge University Press.",
+    "crumbs": [
+      "Módulos do curso",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 4 — IA em MDO e projeto preliminar inspirado em AeroDesign</span>"
+    ]
+  },
+  {
+    "objectID": "recursos.html",
+    "href": "recursos.html",
+    "title": "6  Recursos computacionais, datasets e repositórios",
+    "section": "",
+    "text": "6.1 Bibliotecas e frameworks",
+    "crumbs": [
+      "Recursos e fechamento",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Recursos computacionais, datasets e repositórios</span>"
+    ]
+  },
+  {
+    "objectID": "recursos.html#bibliotecas-e-frameworks",
+    "href": "recursos.html#bibliotecas-e-frameworks",
+    "title": "6  Recursos computacionais, datasets e repositórios",
+    "section": "",
+    "text": "Recurso\nUso no minicurso\n\n\n\n\nPython, NumPy, SciPy, Pandas, Matplotlib, Scikit-learn\nManipulação de dados, modelagem, regressão e visualização\n\n\nPyTorch\nConstrução de MLPs, redes profundas e protótipos de PINNs\n\n\nDeepXDE\nAlternativa especializada para redes neurais informadas pela física\n\n\nPyTorch Geometric\nConstrução e treinamento de GNNs\n\n\nDGL\nAlternativa para modelagem e treinamento de GNNs\n\n\nOpenMDAO\nAnálise e otimização multidisciplinar\n\n\nOpenAeroStruct\nOtimização aeroestrutural acoplada\n\n\nOpenVSP\nModelagem paramétrica e análise conceitual de aeronaves\n\n\nPyomo e SciPy Optimize\nModelagem e solução de problemas de otimização",
+    "crumbs": [
+      "Recursos e fechamento",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Recursos computacionais, datasets e repositórios</span>"
+    ]
+  },
+  {
+    "objectID": "recursos.html#datasets-e-repositórios-públicos",
+    "href": "recursos.html#datasets-e-repositórios-públicos",
+    "title": "6  Recursos computacionais, datasets e repositórios",
+    "section": "6.2 Datasets e repositórios públicos",
+    "text": "6.2 Datasets e repositórios públicos\n\n\n\n\n\n\n\nRecurso\nUso didático\n\n\n\n\nNASA Airfoil Self-Noise\nRegressão aplicada à aerodinâmica/acústica de aerofólios\n\n\nUIUC Airfoil Data Site\nCoordenadas de aerofólios para estudos preliminares de geometria\n\n\nNPARC Alliance / NASA CFD resources\nDiscussão de validação computacional e fluidodinâmica\n\n\nShapeNet / ShapeNet Part\nRepresentação geométrica, nuvens de pontos e IA generativa\n\n\nMIPLIB\nBenchmarks de programação inteira mista\n\n\nMILPBench e facility location benchmarks\nAprendizado para otimização e geração de warm starts\n\n\nRepositórios de PINNs em PyTorch e DeepXDE\nExemplos de EDOs, EDPs e sistemas físicos\n\n\nRepositórios OpenMDAO e OpenAeroStruct\nExemplos de MDO, análise aeroestrutural e otimização",
+    "crumbs": [
+      "Recursos e fechamento",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Recursos computacionais, datasets e repositórios</span>"
+    ]
+  },
+  {
+    "objectID": "recursos.html#política-de-dados",
+    "href": "recursos.html#política-de-dados",
+    "title": "6  Recursos computacionais, datasets e repositórios",
+    "section": "6.3 Política de dados",
+    "text": "6.3 Política de dados\nEste repositório não redistribui datasets de terceiros por padrão. Sempre que possível, serão fornecidos links, instruções de acesso e scripts de download, respeitando as licenças originais.",
+    "crumbs": [
+      "Recursos e fechamento",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Recursos computacionais, datasets e repositórios</span>"
+    ]
+  },
+  {
+    "objectID": "referencias.html",
+    "href": "referencias.html",
+    "title": "7  Referências",
+    "section": "",
+    "text": "Battaglia, Peter W., Jessica B. Hamrick, Victor Bapst, et al. 2018.\nRelational Inductive Biases, Deep Learning, and Graph Networks.\nhttps://arxiv.org/abs/1806.01261.\n\n\nBrunton, Steven L., and J. Nathan Kutz. 2022. Data-Driven Science\nand Engineering: Machine Learning, Dynamical Systems, and Control.\n2nd ed. Cambridge University Press.\n\n\nFey, Matthias, and Jan Eric Lenssen. 2019. “Fast Graph\nRepresentation Learning with PyTorch Geometric.” ICLR\nWorkshop on Representation Learning on Graphs and Manifolds.\n\n\nForrester, Alexander, Andras Sobester, and Andy Keane. 2008.\nEngineering Design via Surrogate Modelling: A Practical Guide.\nWiley.\n\n\nGilmer, Justin, Samuel S. Schoenholz, Patrick F. Riley, Oriol Vinyals,\nand George E. Dahl. 2017. “Neural Message Passing for Quantum\nChemistry.” International Conference on Machine\nLearning, 1263–72.\n\n\nGoodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. Deep\nLearning. MIT Press.\n\n\nGoodfellow, Ian, Jean Pouget-Abadie, Mehdi Mirza, et al. 2014.\n“Generative Adversarial Nets.” Advances in Neural\nInformation Processing Systems.\n\n\nGray, Justin S., John T. Hwang, Joaquim R. R. A. Martins, Kenneth T.\nMoore, and Bret A. Naylor. 2019. “OpenMDAO: An Open-Source\nFramework for Multidisciplinary Design, Analysis, and\nOptimization.” Structural and Multidisciplinary\nOptimization 59: 1075–104.\n\n\nHo, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. “Denoising\nDiffusion Probabilistic Models.” Advances in Neural\nInformation Processing Systems.\n\n\nJasa, John P., John T. Hwang, and Joaquim R. R. A. Martins. 2018.\n“Open-Source Coupled Aerostructural Optimization Using\nPython.” Structural and Multidisciplinary Optimization\n57: 1815–27.\n\n\nKarniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris Perdikaris,\nSifan Wang, and Liu Yang. 2021. “Physics-Informed Machine\nLearning.” Nature Reviews Physics 3: 422–40.\n\n\nKingma, Diederik P., and Max Welling. 2013. Auto-Encoding\nVariational Bayes. https://arxiv.org/abs/1312.6114.\n\n\nKipf, Thomas N., and Max Welling. 2017. “Semi-Supervised\nClassification with Graph Convolutional Networks.”\nInternational Conference on Learning Representations.\n\n\nLeCun, Yann, Yoshua Bengio, and Geoffrey Hinton. 2015. “Deep\nLearning.” Nature 521: 436–44.\n\n\nMartins, Joaquim R. R. A., and Andrew Ning. 2021. Engineering Design\nOptimization. Cambridge University Press.\n\n\nRaissi, Maziar, Paris Perdikaris, and George E. Karniadakis. 2019.\n“Physics-Informed Neural Networks: A Deep Learning Framework for\nSolving Forward and Inverse Problems Involving Nonlinear Partial\nDifferential Equations.” Journal of Computational\nPhysics 378: 686–707.\n\n\nRawlings, James B., David Q. Mayne, and Moritz Diehl. 2017. Model\nPredictive Control: Theory, Computation, and Design. Nob Hill\nPublishing.\n\n\nRombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and\nBjorn Ommer. 2022. “High-Resolution Image Synthesis with Latent\nDiffusion Models.” IEEE/CVF Conference on Computer Vision and\nPattern Recognition, 10684–95.\n\n\nZhou, Jie, Ganqu Cui, Shengding Hu, et al. 2020. “Graph Neural\nNetworks: A Review of Methods and Applications.” AI Open\n1: 57–81.",
+    "crumbs": [
+      "Recursos e fechamento",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Referências</span>"
+    ]
+  }
+]
