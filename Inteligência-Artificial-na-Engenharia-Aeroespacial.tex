@@ -1,0 +1,1392 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  brazilian,
+  a4paper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage[top=30mm,left=30mm,bottom=25mm,right=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Índice}
+\else
+  \newcommand\contentsname{Índice}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Lista de Figuras}
+\else
+  \newcommand\listfigurename{Lista de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Lista de Tabelas}
+\else
+  \newcommand\listtablename{Lista de Tabelas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabela}
+\else
+  \newcommand\tablename{Tabela}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listagem}
+\newcommand*\listoflistings{\listof{codelisting}{Lista de Listagens}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Inteligência Artificial na Engenharia Aeroespacial},
+  pdfauthor={Prof.~Dr.~Victor Rafael Rezende Celestino},
+  pdflang={pt-BR},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Inteligência Artificial na Engenharia Aeroespacial}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Minicurso panorâmico-aplicado --- SEMUNI 2026}
+\author{Prof.~Dr.~Victor Rafael Rezende Celestino}
+\date{20 de setembro de 2026}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Índice}
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Boas-vindas}\label{boas-vindas}
+\addcontentsline{toc}{chapter}{Boas-vindas}
+
+\markboth{Boas-vindas}{Boas-vindas}
+
+Este material organiza o minicurso \textbf{Inteligência Artificial na
+Engenharia Aeroespacial}, proposto para a \textbf{SEMUNI 2026 ---
+FCTE/UnB}.
+
+O minicurso tem caráter \textbf{panorâmico-aplicado}: em quatro horas,
+seu propósito não é formar especialistas em cada arquitetura, mas
+apresentar uma visão integrada de como inteligência artificial,
+simulação, modelos substitutos, grafos e otimização podem apoiar
+problemas de engenharia aeroespacial.
+
+\section*{Informações gerais}\label{informauxe7uxf5es-gerais}
+\addcontentsline{toc}{section}{Informações gerais}
+
+\markright{Informações gerais}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descrição
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Evento & SEMUNI 2026 --- Semana Universitária da FCTE/UnB \\
+Período previsto & 20 a 25 de setembro de 2026 \\
+Título & Inteligência Artificial na Engenharia Aeroespacial \\
+Carga horária & 4 horas \\
+Professor responsável & Prof.~Dr.~Victor Rafael Rezende Celestino \\
+Formato & Exposição dialogada, roteiro navegável, demonstrações
+computacionais e discussão de aplicações \\
+Natureza & Panorama aplicado sobre IA, simulação, otimização e projeto
+aeroespacial \\
+\end{longtable}
+}
+
+\section*{Síntese executiva}\label{suxedntese-executiva}
+\addcontentsline{toc}{section}{Síntese executiva}
+
+\markright{Síntese executiva}
+
+A engenharia aeroespacial vem incorporando técnicas de aprendizado
+profundo, modelos generativos, redes neurais de grafo, simulação
+orientada por dados e otimização baseada em modelos. Essas técnicas
+ampliam a capacidade de modelar fenômenos, acelerar simulações, explorar
+alternativas de projeto e apoiar decisões em sistemas complexos, sem
+substituir os fundamentos físicos, matemáticos e experimentais da
+engenharia.
+
+O minicurso articula quatro eixos:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Deep Learning, MLPs e PINNs};
+\item
+  \textbf{IA generativa, dados sintéticos e modelos substitutos};
+\item
+  \textbf{GNNs, otimização combinatória, MINLP e MPC};
+\item
+  \textbf{IA em otimização multidisciplinar e AeroDesign}.
+\end{enumerate}
+
+\section*{Público-alvo}\label{puxfablico-alvo}
+\addcontentsline{toc}{section}{Público-alvo}
+
+\markright{Público-alvo}
+
+Estudantes de graduação e pós-graduação em Engenharia Aeroespacial,
+Engenharia Automotiva, Engenharia de Energia, Engenharia Eletrônica,
+Engenharia de Software, Computação, Ciência de Dados, Administração,
+Pesquisa Operacional e áreas afins; professores, pesquisadores e
+técnicos interessados na interseção entre inteligência artificial e
+aplicações aeroespaciais.
+
+\section*{Pré-requisitos
+desejáveis}\label{pruxe9-requisitos-desejuxe1veis}
+\addcontentsline{toc}{section}{Pré-requisitos desejáveis}
+
+\markright{Pré-requisitos desejáveis}
+
+\begin{itemize}
+\tightlist
+\item
+  Noções básicas de cálculo, álgebra linear e física;
+\item
+  conhecimento introdutório de Python;
+\item
+  fundamentos de engenharia;
+\item
+  familiaridade inicial com aprendizado de máquina, embora não
+  obrigatória.
+\end{itemize}
+
+\section*{Cronograma de 4 horas}\label{cronograma-de-4-horas}
+\addcontentsline{toc}{section}{Cronograma de 4 horas}
+
+\markright{Cronograma de 4 horas}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedleft
+Tempo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bloco
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Conteúdo principal
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0:00--0:15 & Abertura & Motivação, escopo panorâmico-aplicado e mapa do
+repositório \\
+0:15--1:00 & Módulo 1 & MLPs, deep learning, PINNs e demonstração em
+PyTorch/DeepXDE \\
+1:00--2:00 & Módulo 2 & IA generativa, dados sintéticos, geometrias e
+surrogate models \\
+2:00--3:00 & Módulo 3 & GNNs, grafos bipartidos, MINLP, MPC e PyTorch
+Geometric/DGL \\
+3:00--3:50 & Módulo 4 & IA, MDO, OpenMDAO, OpenVSP e estudo inspirado no
+AeroDesign \\
+3:50--4:00 & Fechamento & Síntese, bibliografia, repositório e
+oportunidades de projetos \\
+\end{longtable}
+}
+
+\section*{Regra operacional do curso}\label{regra-operacional-do-curso}
+\addcontentsline{toc}{section}{Regra operacional do curso}
+
+\markright{Regra operacional do curso}
+
+Cada módulo terá \textbf{uma demonstração principal}. Conteúdos
+adicionais serão apresentados como leituras, desafios e extensões para
+estudo posterior.
+
+\section*{Como navegar}\label{como-navegar}
+\addcontentsline{toc}{section}{Como navegar}
+
+\markright{Como navegar}
+
+Use o menu lateral para acessar os quatro módulos. Em cada módulo,
+procure as seções:
+
+\begin{itemize}
+\tightlist
+\item
+  problema de engenharia;
+\item
+  classe de modelo de IA;
+\item
+  fundamentos mínimos;
+\item
+  roteiro de demonstração ao vivo;
+\item
+  links para abrir durante a aula;
+\item
+  notebook associado;
+\item
+  cuidados de engenharia;
+\item
+  projetos derivados.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Apresentação e filosofia do
+curso}\label{apresentauxe7uxe3o-e-filosofia-do-curso}
+
+\section{Tese central}\label{tese-central}
+
+A inteligência artificial deve ser compreendida como \textbf{acelerador,
+aproximador e organizador de conhecimento} em engenharia aeroespacial,
+não como substituta dos princípios físicos, matemáticos e experimentais
+que sustentam a engenharia.
+
+Em problemas aeroespaciais, modelos de IA podem:
+
+\begin{itemize}
+\tightlist
+\item
+  aproximar funções de alto custo computacional;
+\item
+  apoiar a exploração de espaços de projeto;
+\item
+  reduzir o tempo de simulações preliminares;
+\item
+  extrair padrões de dados experimentais, numéricos ou operacionais;
+\item
+  representar sistemas complexos por grafos;
+\item
+  apoiar decisões em otimização e controle.
+\end{itemize}
+
+Contudo, esses modelos devem ser avaliados com rigor quanto a:
+
+\begin{itemize}
+\tightlist
+\item
+  domínio de validade;
+\item
+  extrapolação;
+\item
+  incerteza;
+\item
+  consistência física;
+\item
+  interpretabilidade;
+\item
+  robustez computacional;
+\item
+  rastreabilidade dos dados e hipóteses.
+\end{itemize}
+
+\section{Diretriz pedagógica dos
+módulos}\label{diretriz-pedaguxf3gica-dos-muxf3dulos}
+
+Cada módulo será guiado por três perguntas:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Qual problema de engenharia está sendo tratado?}
+\item
+  \textbf{Qual classe de modelo de IA é adequada e por quê?}
+\item
+  \textbf{Quais cuidados de validação, extrapolação e consistência
+  física devem ser observados?}
+\end{enumerate}
+
+Essa estrutura busca conectar intuição física, formulação matemática e
+demonstração computacional.
+
+\section{Escopo e limites}\label{escopo-e-limites}
+
+Este minicurso é uma introdução aplicada. Em quatro horas, não é
+realista treinar profundamente os participantes em PyTorch, DeepXDE,
+PyTorch Geometric, DGL, OpenMDAO, OpenAeroStruct e OpenVSP. O objetivo é
+oferecer um mapa conceitual, um conjunto de exemplos e um repositório
+público para aprofundamento.
+
+\part{Módulos do curso}
+
+\chapter{Módulo 1 --- Deep Learning, MLPs e
+PINNs}\label{muxf3dulo-1-deep-learning-mlps-e-pinns}
+
+\section{1. Objetivos de aprendizagem}\label{objetivos-de-aprendizagem}
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+\begin{itemize}
+\tightlist
+\item
+  reconhecer o problema de engenharia associado ao módulo;
+\item
+  compreender a intuição da classe de modelo de IA apresentada;
+\item
+  identificar uma demonstração computacional mínima;
+\item
+  avaliar riscos de extrapolação, validação e consistência física;
+\item
+  localizar recursos públicos para aprofundamento.
+\end{itemize}
+
+\section{2. Problema de engenharia}\label{problema-de-engenharia}
+
+Predição e aproximação de respostas estruturais ou aerodinâmicas em
+problemas simplificados, especialmente quando há necessidade de combinar
+dados com restrições físicas.
+
+\section{3. Classe de modelo de IA}\label{classe-de-modelo-de-ia}
+
+Perceptrons multicamadas, redes neurais profundas e redes neurais
+informadas pela física. O foco é compreender a progressão de MLPs para
+arquiteturas modernas e como PINNs incorporam resíduos de equações
+diferenciais na função de perda.
+
+\section{4. Fundamentos conceituais}\label{fundamentos-conceituais}
+
+MLP, função de ativação, treinamento por retropropagação, autograd,
+regularização, overfitting, modelos fundacionais e aprendizado
+físico-informado.
+
+\section{5. Formulação matemática
+mínima}\label{formulauxe7uxe3o-matemuxe1tica-muxednima}
+
+Uma PINN pode ser vista como uma rede neural (\(\hat{u}_\theta(x,t)\))
+treinada por uma função de perda composta:
+
+\[
+\mathcal{L}(\theta) =
+\lambda_d \mathcal{L}_{dados} +
+\lambda_f \mathcal{L}_{fisica} +
+\lambda_b \mathcal{L}_{contorno} +
+\lambda_i \mathcal{L}_{inicial}.
+\]
+
+A contribuição física geralmente envolve o resíduo de uma equação
+diferencial:
+
+\[
+r_\theta(x,t) = \mathcal{N}[\hat{u}_\theta](x,t),
+\]
+
+onde (\(\mathcal{N}\)) representa o operador diferencial do problema.
+
+\section{6. Mapa de demonstração ao
+vivo}\label{mapa-de-demonstrauxe7uxe3o-ao-vivo}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedleft
+Passo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ação em sala
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mensagem didática
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Abrir a página do módulo no GitHub Pages & Apresentar o problema de
+engenharia \\
+2 & Abrir o notebook associado & Mostrar o fluxo computacional mínimo \\
+3 & Executar ou comentar as células principais & Relacionar código,
+modelo e hipótese física \\
+4 & Alterar um parâmetro simples & Evidenciar sensibilidade e limites do
+modelo \\
+5 & Discutir validação & Evitar uso acrítico da IA em engenharia \\
+\end{longtable}
+}
+
+\section{7. Links para abrir durante a
+aula}\label{links-para-abrir-durante-a-aula}
+
+\begin{itemize}
+\tightlist
+\item
+  PyTorch Documentation;
+\item
+  DeepXDE Documentation;
+\item
+  NASA Airfoil Self-Noise Dataset;
+\item
+  repositórios introdutórios de PINNs em PyTorch.
+\end{itemize}
+
+\section{8. Notebook associado}\label{notebook-associado}
+
+\begin{quote}
+Notebook principal: \texttt{notebooks/01\_mlp\_pinn\_pytorch.ipynb}
+\end{quote}
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o
+botão direto para abertura no Google Colab.
+
+\section{9. Cuidados de engenharia}\label{cuidados-de-engenharia}
+
+\begin{itemize}
+\tightlist
+\item
+  Não interpretar baixa perda de treinamento como validade física geral;
+\item
+  verificar condições de contorno;
+\item
+  analisar extrapolação fora do domínio treinado;
+\item
+  comparar com solução analítica, numérica ou experimental quando
+  disponível.
+\end{itemize}
+
+\section{10. Questões de discussão}\label{questuxf5es-de-discussuxe3o}
+
+\begin{itemize}
+\tightlist
+\item
+  Quando uma PINN é preferível a uma rede puramente orientada por dados?
+\item
+  Que riscos surgem quando a física é mal especificada?
+\item
+  Como escolher pesos entre dados, resíduo físico e condições de
+  contorno?
+\end{itemize}
+
+\section{11. Possíveis projetos
+derivados}\label{possuxedveis-projetos-derivados}
+
+\begin{itemize}
+\tightlist
+\item
+  PINN para viga Euler-Bernoulli simplificada;
+\item
+  MLP para aproximação de coeficientes aerodinâmicos;
+\item
+  comparação entre regressão clássica, MLP e PINN.
+\end{itemize}
+
+\section{12. Leituras recomendadas}\label{leituras-recomendadas}
+
+\begin{itemize}
+\tightlist
+\item
+  Goodfellow et al. (2016)
+\item
+  LeCun et al. (2015)
+\item
+  Raissi et al. (2019)
+\item
+  Karniadakis et al. (2021)
+\item
+  Brunton e Kutz (2022)
+\end{itemize}
+
+\chapter{Módulo 2 --- IA generativa, dados sintéticos e modelos
+substitutos}\label{muxf3dulo-2-ia-generativa-dados-sintuxe9ticos-e-modelos-substitutos}
+
+\section{1. Objetivos de
+aprendizagem}\label{objetivos-de-aprendizagem-1}
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+\begin{itemize}
+\tightlist
+\item
+  reconhecer o problema de engenharia associado ao módulo;
+\item
+  compreender a intuição da classe de modelo de IA apresentada;
+\item
+  identificar uma demonstração computacional mínima;
+\item
+  avaliar riscos de extrapolação, validação e consistência física;
+\item
+  localizar recursos públicos para aprofundamento.
+\end{itemize}
+
+\section{2. Problema de engenharia}\label{problema-de-engenharia-1}
+
+Geração de dados sintéticos, exploração de geometrias e construção de
+modelos substitutos para reduzir custo computacional em simulações
+aeroespaciais.
+
+\section{3. Classe de modelo de IA}\label{classe-de-modelo-de-ia-1}
+
+Modelos generativos, incluindo VAEs, GANs, modelos de difusão, modelos
+autorregressivos e mecanismos de atenção. O módulo enfatiza também
+surrogate models como aproximadores de simulações caras.
+
+\section{4. Fundamentos conceituais}\label{fundamentos-conceituais-1}
+
+Distribuição de dados, espaço latente, codificador, decodificador,
+discriminador, difusão, atenção, plausibilidade física, aumento de dados
+e aprendizado ativo.
+
+\section{5. Formulação matemática
+mínima}\label{formulauxe7uxe3o-matemuxe1tica-muxednima-1}
+
+Um modelo substituto busca aproximar uma função de alto custo:
+
+\[
+y = f(x) \quad \Rightarrow \quad \hat{y} = \hat{f}_\theta(x),
+\]
+
+em que (\(f\)) pode representar uma simulação CFD, análise estrutural ou
+cálculo de desempenho.
+
+Em um VAE, o treinamento combina reconstrução e regularização
+probabilística:
+
+\[
+\mathcal{L} =
+\mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x|z)] -
+D_{KL}(q_\phi(z|x)\|p(z)).
+\]
+
+\section{6. Mapa de demonstração ao
+vivo}\label{mapa-de-demonstrauxe7uxe3o-ao-vivo-1}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedleft
+Passo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ação em sala
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mensagem didática
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Abrir a página do módulo no GitHub Pages & Apresentar o problema de
+engenharia \\
+2 & Abrir o notebook associado & Mostrar o fluxo computacional mínimo \\
+3 & Executar ou comentar as células principais & Relacionar código,
+modelo e hipótese física \\
+4 & Alterar um parâmetro simples & Evidenciar sensibilidade e limites do
+modelo \\
+5 & Discutir validação & Evitar uso acrítico da IA em engenharia \\
+\end{longtable}
+}
+
+\section{7. Links para abrir durante a
+aula}\label{links-para-abrir-durante-a-aula-1}
+
+\begin{itemize}
+\tightlist
+\item
+  NASA Airfoil Self-Noise Dataset;
+\item
+  UIUC Airfoil Data Site;
+\item
+  ShapeNet / ShapeNet Part;
+\item
+  PyTorch Documentation;
+\item
+  exemplos de surrogate modeling em Scikit-learn e PyTorch.
+\end{itemize}
+
+\section{8. Notebook associado}\label{notebook-associado-1}
+
+\begin{quote}
+Notebook principal:
+\texttt{notebooks/02\_surrogate\_dados\_sinteticos.ipynb}
+\end{quote}
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o
+botão direto para abertura no Google Colab.
+
+\section{9. Cuidados de engenharia}\label{cuidados-de-engenharia-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Dados sintéticos não substituem validação experimental;
+\item
+  geometrias geradas precisam respeitar restrições físicas e
+  operacionais;
+\item
+  surrogate models podem falhar severamente fora do domínio de
+  treinamento;
+\item
+  métricas estatísticas devem ser combinadas com julgamento de
+  engenharia.
+\end{itemize}
+
+\section{10. Questões de discussão}\label{questuxf5es-de-discussuxe3o-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Como validar dados sintéticos em engenharia?
+\item
+  Quando um surrogate model é suficiente para decisão preliminar?
+\item
+  Que tipo de erro é aceitável em projeto conceitual?
+\end{itemize}
+
+\section{11. Possíveis projetos
+derivados}\label{possuxedveis-projetos-derivados-1}
+
+\begin{itemize}
+\tightlist
+\item
+  modelo substituto para ruído de aerofólio;
+\item
+  geração de amostras sintéticas de configurações de asa;
+\item
+  comparação entre Gaussian Process, Random Forest e MLP para regressão
+  aerodinâmica.
+\end{itemize}
+
+\section{12. Leituras recomendadas}\label{leituras-recomendadas-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Goodfellow et al. (2014)
+\item
+  Kingma e Welling (2013)
+\item
+  Ho et al. (2020)
+\item
+  Rombach et al. (2022)
+\item
+  Forrester et al. (2008)
+\end{itemize}
+
+\chapter{Módulo 3 --- GNNs, otimização, MINLP e
+MPC}\label{muxf3dulo-3-gnns-otimizauxe7uxe3o-minlp-e-mpc}
+
+\section{1. Objetivos de
+aprendizagem}\label{objetivos-de-aprendizagem-2}
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+\begin{itemize}
+\tightlist
+\item
+  reconhecer o problema de engenharia associado ao módulo;
+\item
+  compreender a intuição da classe de modelo de IA apresentada;
+\item
+  identificar uma demonstração computacional mínima;
+\item
+  avaliar riscos de extrapolação, validação e consistência física;
+\item
+  localizar recursos públicos para aprofundamento.
+\end{itemize}
+
+\section{2. Problema de engenharia}\label{problema-de-engenharia-2}
+
+Representação de sistemas complexos, malhas, componentes, restrições e
+problemas de otimização por meio de grafos, com aplicações em otimização
+combinatória, MINLP e controle preditivo.
+
+\section{3. Classe de modelo de IA}\label{classe-de-modelo-de-ia-2}
+
+Redes neurais de grafo, grafos bipartidos, embeddings e message passing.
+O módulo apresenta como problemas de otimização podem ser representados
+por variáveis, restrições e relações estruturais.
+
+\section{4. Fundamentos conceituais}\label{fundamentos-conceituais-2}
+
+Nós, arestas, atributos, grafos bipartidos, embeddings, agregação de
+vizinhança, message passing, warm start, predição de variáveis ativas e
+suporte a decisões em horizonte móvel.
+
+\section{5. Formulação matemática
+mínima}\label{formulauxe7uxe3o-matemuxe1tica-muxednima-2}
+
+Em uma GNN, uma etapa genérica de message passing pode ser escrita como:
+
+\[
+m_i^{(k)} = \sum_{j \in \mathcal{N}(i)}
+\phi^{(k)}(h_i^{(k)}, h_j^{(k)}, e_{ij}),
+\]
+
+\[
+h_i^{(k+1)} =
+\psi^{(k)}(h_i^{(k)}, m_i^{(k)}),
+\]
+
+onde (\(h_i\)) é a representação do nó, (\(e_{ij}\)) representa
+atributos da aresta e (\(\mathcal{N}(i)\)) é a vizinhança de (\(i\)).
+
+\section{6. Mapa de demonstração ao
+vivo}\label{mapa-de-demonstrauxe7uxe3o-ao-vivo-2}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedleft
+Passo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ação em sala
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mensagem didática
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Abrir a página do módulo no GitHub Pages & Apresentar o problema de
+engenharia \\
+2 & Abrir o notebook associado & Mostrar o fluxo computacional mínimo \\
+3 & Executar ou comentar as células principais & Relacionar código,
+modelo e hipótese física \\
+4 & Alterar um parâmetro simples & Evidenciar sensibilidade e limites do
+modelo \\
+5 & Discutir validação & Evitar uso acrítico da IA em engenharia \\
+\end{longtable}
+}
+
+\section{7. Links para abrir durante a
+aula}\label{links-para-abrir-durante-a-aula-2}
+
+\begin{itemize}
+\tightlist
+\item
+  PyTorch Geometric Documentation;
+\item
+  DGL Documentation;
+\item
+  MIPLIB;
+\item
+  MILPBench;
+\item
+  benchmarks de facility location;
+\item
+  materiais introdutórios sobre aprendizado para otimização.
+\end{itemize}
+
+\section{8. Notebook associado}\label{notebook-associado-2}
+
+\begin{quote}
+Notebook principal: \texttt{notebooks/03\_gnn\_bipartite\_minlp.ipynb}
+\end{quote}
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o
+botão direto para abertura no Google Colab.
+
+\section{9. Cuidados de engenharia}\label{cuidados-de-engenharia-2}
+
+\begin{itemize}
+\tightlist
+\item
+  GNNs podem capturar padrões estruturais, mas não garantem otimalidade;
+\item
+  decisões geradas por IA devem ser verificadas por solucionadores ou
+  regras de viabilidade;
+\item
+  benchmarks de otimização nem sempre representam sistemas aeroespaciais
+  reais;
+\item
+  MPC exige tratamento rigoroso de estabilidade, restrições e robustez.
+\end{itemize}
+
+\section{10. Questões de discussão}\label{questuxf5es-de-discussuxe3o-2}
+
+\begin{itemize}
+\tightlist
+\item
+  Como representar um problema de otimização como grafo bipartido?
+\item
+  GNN deve substituir ou auxiliar o solver?
+\item
+  Como validar uma política aproximada em MPC?
+\end{itemize}
+
+\section{11. Possíveis projetos
+derivados}\label{possuxedveis-projetos-derivados-2}
+
+\begin{itemize}
+\tightlist
+\item
+  grafo bipartido para pequeno problema MILP;
+\item
+  classificação de variáveis candidatas a zero/um;
+\item
+  warm start orientado por aprendizado;
+\item
+  GNN para rede simplificada de componentes aeroespaciais.
+\end{itemize}
+
+\section{12. Leituras recomendadas}\label{leituras-recomendadas-2}
+
+\begin{itemize}
+\tightlist
+\item
+  Kipf e Welling (2017)
+\item
+  Gilmer et al. (2017)
+\item
+  Battaglia et al. (2018)
+\item
+  Fey e Lenssen (2019)
+\item
+  Zhou et al. (2020)
+\item
+  Rawlings et al. (2017)
+\end{itemize}
+
+\chapter{Módulo 4 --- IA em MDO e projeto preliminar inspirado em
+AeroDesign}\label{muxf3dulo-4-ia-em-mdo-e-projeto-preliminar-inspirado-em-aerodesign}
+
+\section{1. Objetivos de
+aprendizagem}\label{objetivos-de-aprendizagem-3}
+
+Ao final deste módulo, espera-se que o participante seja capaz de:
+
+\begin{itemize}
+\tightlist
+\item
+  reconhecer o problema de engenharia associado ao módulo;
+\item
+  compreender a intuição da classe de modelo de IA apresentada;
+\item
+  identificar uma demonstração computacional mínima;
+\item
+  avaliar riscos de extrapolação, validação e consistência física;
+\item
+  localizar recursos públicos para aprofundamento.
+\end{itemize}
+
+\section{2. Problema de engenharia}\label{problema-de-engenharia-3}
+
+Projeto preliminar de aeronaves de pequeno porte com disciplinas
+acopladas: aerodinâmica, estruturas, massa, propulsão, desempenho,
+estabilidade e restrições operacionais.
+
+\section{3. Classe de modelo de IA}\label{classe-de-modelo-de-ia-3}
+
+Modelos substitutos, otimização bayesiana, aprendizado ativo e
+integração com frameworks de otimização multidisciplinar, especialmente
+OpenMDAO e ferramentas de geometria conceitual.
+
+\section{4. Fundamentos conceituais}\label{fundamentos-conceituais-3}
+
+Variáveis de projeto, funções objetivo, restrições, disciplinas
+acopladas, análise de sensibilidade, metamodelos, trade-offs e busca em
+espaços de configuração.
+
+\section{5. Formulação matemática
+mínima}\label{formulauxe7uxe3o-matemuxe1tica-muxednima-3}
+
+Um problema MDO simplificado pode ser escrito como:
+
+\[
+\min_{x} \; F(x)
+\]
+
+sujeito a:
+
+\[
+g_i(x) \leq 0,\quad i=1,\ldots,m,
+\]
+
+\[
+h_j(x) = 0,\quad j=1,\ldots,p,
+\]
+
+em que (\(x\)) representa variáveis de projeto, (\(F(x)\)) é a função
+objetivo e (\(g_i\), \(h_j\)) representam restrições de engenharia.
+
+\section{6. Mapa de demonstração ao
+vivo}\label{mapa-de-demonstrauxe7uxe3o-ao-vivo-3}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedleft
+Passo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ação em sala
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mensagem didática
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Abrir a página do módulo no GitHub Pages & Apresentar o problema de
+engenharia \\
+2 & Abrir o notebook associado & Mostrar o fluxo computacional mínimo \\
+3 & Executar ou comentar as células principais & Relacionar código,
+modelo e hipótese física \\
+4 & Alterar um parâmetro simples & Evidenciar sensibilidade e limites do
+modelo \\
+5 & Discutir validação & Evitar uso acrítico da IA em engenharia \\
+\end{longtable}
+}
+
+\section{7. Links para abrir durante a
+aula}\label{links-para-abrir-durante-a-aula-3}
+
+\begin{itemize}
+\tightlist
+\item
+  OpenMDAO Documentation;
+\item
+  OpenAeroStruct Documentation;
+\item
+  OpenVSP Documentation;
+\item
+  UIUC Airfoil Data Site;
+\item
+  materiais públicos de AeroDesign e projeto conceitual de aeronaves.
+\end{itemize}
+
+\section{8. Notebook associado}\label{notebook-associado-3}
+
+\begin{quote}
+Notebook principal:
+\texttt{notebooks/04\_mdo\_aerodesign\_openmdao.ipynb}
+\end{quote}
+
+Quando o repositório estiver publicado no GitHub, este espaço receberá o
+botão direto para abertura no Google Colab.
+
+\section{9. Cuidados de engenharia}\label{cuidados-de-engenharia-3}
+
+\begin{itemize}
+\tightlist
+\item
+  Modelos preliminares devem ser tratados como apoio à decisão, não como
+  certificação;
+\item
+  acoplamentos entre disciplinas podem gerar efeitos não intuitivos;
+\item
+  restrições estruturais, operacionais e de segurança devem prevalecer
+  sobre ganho de função objetivo;
+\item
+  otimização sem validação pode produzir soluções inviáveis.
+\end{itemize}
+
+\section{10. Questões de discussão}\label{questuxf5es-de-discussuxe3o-3}
+
+\begin{itemize}
+\tightlist
+\item
+  Como definir variáveis de projeto relevantes para uma aeronave de
+  pequeno porte?
+\item
+  Qual é o papel de um surrogate model em MDO?
+\item
+  Como lidar com trade-offs entre carga paga, decolagem, massa e
+  desempenho aerodinâmico?
+\end{itemize}
+
+\section{11. Possíveis projetos
+derivados}\label{possuxedveis-projetos-derivados-3}
+
+\begin{itemize}
+\tightlist
+\item
+  MDO simplificado de asa para AeroDesign;
+\item
+  surrogate model para estimar carga paga;
+\item
+  estudo de sensibilidade de alongamento e área de asa;
+\item
+  integração OpenVSP--OpenMDAO em projeto conceitual.
+\end{itemize}
+
+\section{12. Leituras recomendadas}\label{leituras-recomendadas-3}
+
+\begin{itemize}
+\tightlist
+\item
+  Martins e Ning (2021)
+\item
+  Gray et al. (2019)
+\item
+  Jasa et al. (2018)
+\item
+  Forrester et al. (2008)
+\item
+  Brunton e Kutz (2022)
+\end{itemize}
+
+\part{Recursos e fechamento}
+
+\chapter{Recursos computacionais, datasets e
+repositórios}\label{recursos-computacionais-datasets-e-reposituxf3rios}
+
+\section{Bibliotecas e frameworks}\label{bibliotecas-e-frameworks}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Recurso
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Uso no minicurso
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Python, NumPy, SciPy, Pandas, Matplotlib, Scikit-learn & Manipulação de
+dados, modelagem, regressão e visualização \\
+PyTorch & Construção de MLPs, redes profundas e protótipos de PINNs \\
+DeepXDE & Alternativa especializada para redes neurais informadas pela
+física \\
+PyTorch Geometric & Construção e treinamento de GNNs \\
+DGL & Alternativa para modelagem e treinamento de GNNs \\
+OpenMDAO & Análise e otimização multidisciplinar \\
+OpenAeroStruct & Otimização aeroestrutural acoplada \\
+OpenVSP & Modelagem paramétrica e análise conceitual de aeronaves \\
+Pyomo e SciPy Optimize & Modelagem e solução de problemas de
+otimização \\
+\end{longtable}
+}
+
+\section{Datasets e repositórios
+públicos}\label{datasets-e-reposituxf3rios-puxfablicos}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Recurso
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Uso didático
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+NASA Airfoil Self-Noise & Regressão aplicada à aerodinâmica/acústica de
+aerofólios \\
+UIUC Airfoil Data Site & Coordenadas de aerofólios para estudos
+preliminares de geometria \\
+NPARC Alliance / NASA CFD resources & Discussão de validação
+computacional e fluidodinâmica \\
+ShapeNet / ShapeNet Part & Representação geométrica, nuvens de pontos e
+IA generativa \\
+MIPLIB & Benchmarks de programação inteira mista \\
+MILPBench e facility location benchmarks & Aprendizado para otimização e
+geração de warm starts \\
+Repositórios de PINNs em PyTorch e DeepXDE & Exemplos de EDOs, EDPs e
+sistemas físicos \\
+Repositórios OpenMDAO e OpenAeroStruct & Exemplos de MDO, análise
+aeroestrutural e otimização \\
+\end{longtable}
+}
+
+\section{Política de dados}\label{poluxedtica-de-dados}
+
+Este repositório não redistribui datasets de terceiros por padrão.
+Sempre que possível, serão fornecidos links, instruções de acesso e
+scripts de download, respeitando as licenças originais.
+
+\chapter{Referências}\label{referuxeancias}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{1}
+\bibitem[\citeproctext]{ref-battaglia2018relational}
+Battaglia, Peter W., Jessica B. Hamrick, Victor Bapst, et al. 2018.
+\emph{Relational inductive biases, deep learning, and graph networks}.
+\url{https://arxiv.org/abs/1806.01261}.
+
+\bibitem[\citeproctext]{ref-brunton2022data}
+Brunton, Steven L., e J. Nathan Kutz. 2022. \emph{Data-Driven Science
+and Engineering: Machine Learning, Dynamical Systems, and Control}. 2º
+ed. Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-fey2019fast}
+Fey, Matthias, e Jan Eric Lenssen. 2019. {``Fast Graph Representation
+Learning with PyTorch Geometric''}. \emph{ICLR Workshop on
+Representation Learning on Graphs and Manifolds}.
+
+\bibitem[\citeproctext]{ref-forrester2008engineering}
+Forrester, Alexander, Andras Sobester, e Andy Keane. 2008.
+\emph{Engineering Design via Surrogate Modelling: A Practical Guide}.
+Wiley.
+
+\bibitem[\citeproctext]{ref-gilmer2017neural}
+Gilmer, Justin, Samuel S. Schoenholz, Patrick F. Riley, Oriol Vinyals, e
+George E. Dahl. 2017. {``Neural Message Passing for Quantum
+Chemistry''}. \emph{International Conference on Machine Learning},
+1263--72.
+
+\bibitem[\citeproctext]{ref-goodfellow2016deep}
+Goodfellow, Ian, Yoshua Bengio, e Aaron Courville. 2016. \emph{Deep
+Learning}. MIT Press.
+
+\bibitem[\citeproctext]{ref-goodfellow2014generative}
+Goodfellow, Ian, Jean Pouget-Abadie, Mehdi Mirza, et al. 2014.
+{``Generative Adversarial Nets''}. \emph{Advances in Neural Information
+Processing Systems}.
+
+\bibitem[\citeproctext]{ref-gray2019openmdao}
+Gray, Justin S., John T. Hwang, Joaquim R. R. A. Martins, Kenneth T.
+Moore, e Bret A. Naylor. 2019. {``OpenMDAO: An open-source framework for
+multidisciplinary design, analysis, and optimization''}.
+\emph{Structural and Multidisciplinary Optimization} 59: 1075--104.
+
+\bibitem[\citeproctext]{ref-ho2020denoising}
+Ho, Jonathan, Ajay Jain, e Pieter Abbeel. 2020. {``Denoising Diffusion
+Probabilistic Models''}. \emph{Advances in Neural Information Processing
+Systems}.
+
+\bibitem[\citeproctext]{ref-jasa2018open}
+Jasa, John P., John T. Hwang, e Joaquim R. R. A. Martins. 2018.
+{``Open-source coupled aerostructural optimization using Python''}.
+\emph{Structural and Multidisciplinary Optimization} 57: 1815--27.
+
+\bibitem[\citeproctext]{ref-karniadakis2021physics}
+Karniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris Perdikaris,
+Sifan Wang, e Liu Yang. 2021. {``Physics-informed machine learning''}.
+\emph{Nature Reviews Physics} 3: 422--40.
+
+\bibitem[\citeproctext]{ref-kingma2013auto}
+Kingma, Diederik P., e Max Welling. 2013. \emph{Auto-Encoding
+Variational Bayes}. \url{https://arxiv.org/abs/1312.6114}.
+
+\bibitem[\citeproctext]{ref-kipf2017semi}
+Kipf, Thomas N., e Max Welling. 2017. {``Semi-Supervised Classification
+with Graph Convolutional Networks''}. \emph{International Conference on
+Learning Representations}.
+
+\bibitem[\citeproctext]{ref-lecun2015deep}
+LeCun, Yann, Yoshua Bengio, e Geoffrey Hinton. 2015. {``Deep
+learning''}. \emph{Nature} 521: 436--44.
+
+\bibitem[\citeproctext]{ref-martins2021engineering}
+Martins, Joaquim R. R. A., e Andrew Ning. 2021. \emph{Engineering Design
+Optimization}. Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-raissi2019physics}
+Raissi, Maziar, Paris Perdikaris, e George E. Karniadakis. 2019.
+{``Physics-informed neural networks: A deep learning framework for
+solving forward and inverse problems involving nonlinear partial
+differential equations''}. \emph{Journal of Computational Physics} 378:
+686--707.
+
+\bibitem[\citeproctext]{ref-rawlings2017model}
+Rawlings, James B., David Q. Mayne, e Moritz Diehl. 2017. \emph{Model
+Predictive Control: Theory, Computation, and Design}. Nob Hill
+Publishing.
+
+\bibitem[\citeproctext]{ref-rombach2022high}
+Rombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, e
+Bjorn Ommer. 2022. {``High-Resolution Image Synthesis with Latent
+Diffusion Models''}. \emph{IEEE/CVF Conference on Computer Vision and
+Pattern Recognition}, 10684--95.
+
+\bibitem[\citeproctext]{ref-zhou2020graph}
+Zhou, Jie, Ganqu Cui, Shengding Hu, et al. 2020. {``Graph neural
+networks: A review of methods and applications''}. \emph{AI Open} 1:
+57--81.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}

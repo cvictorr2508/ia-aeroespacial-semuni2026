@@ -26,21 +26,21 @@ Variáveis de projeto, funções objetivo, restrições, disciplinas acopladas, 
 
 Um problema MDO simplificado pode ser escrito como:
 
-\[
+$$
 \min_{x} \; F(x)
-\]
+$$
 
 sujeito a:
 
-\[
+$$
 g_i(x) \leq 0,\quad i=1,\ldots,m,
-\]
+$$
 
-\[
+$$
 h_j(x) = 0,\quad j=1,\ldots,p,
-\]
+$$
 
-em que \(x\) representa variáveis de projeto, \(F(x)\) é a função objetivo e \(g_i, h_j\) representam restrições de engenharia.
+em que \($x$\) representa variáveis de projeto, \($F(x)$\) é a função objetivo e \($g_i$, $h_j$\) representam restrições de engenharia.
 
 ## 6. Mapa de demonstração ao vivo
 

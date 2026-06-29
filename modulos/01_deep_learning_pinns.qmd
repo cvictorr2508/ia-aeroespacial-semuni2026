@@ -24,23 +24,23 @@ MLP, função de ativação, treinamento por retropropagação, autograd, regula
 
 ## 5. Formulação matemática mínima
 
-Uma PINN pode ser vista como uma rede neural \(\hat{u}_\theta(x,t)\) treinada por uma função de perda composta:
+Uma PINN pode ser vista como uma rede neural \($\hat{u}_\theta(x,t)$\) treinada por uma função de perda composta:
 
-\[
+$$
 \mathcal{L}(\theta) =
 \lambda_d \mathcal{L}_{dados} +
 \lambda_f \mathcal{L}_{fisica} +
 \lambda_b \mathcal{L}_{contorno} +
 \lambda_i \mathcal{L}_{inicial}.
-\]
+$$
 
 A contribuição física geralmente envolve o resíduo de uma equação diferencial:
 
-\[
+$$
 r_\theta(x,t) = \mathcal{N}[\hat{u}_\theta](x,t),
-\]
+$$
 
-onde \(\mathcal{N}\) representa o operador diferencial do problema.
+onde \($\mathcal{N}$\) representa o operador diferencial do problema.
 
 ## 6. Mapa de demonstração ao vivo
 

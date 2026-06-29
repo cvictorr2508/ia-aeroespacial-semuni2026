@@ -26,17 +26,17 @@ Nós, arestas, atributos, grafos bipartidos, embeddings, agregação de vizinhan
 
 Em uma GNN, uma etapa genérica de message passing pode ser escrita como:
 
-\[
+$$
 m_i^{(k)} = \sum_{j \in \mathcal{N}(i)}
 \phi^{(k)}(h_i^{(k)}, h_j^{(k)}, e_{ij}),
-\]
+$$
 
-\[
+$$
 h_i^{(k+1)} =
 \psi^{(k)}(h_i^{(k)}, m_i^{(k)}),
-\]
+$$
 
-onde \(h_i\) é a representação do nó, \(e_{ij}\) representa atributos da aresta e \(\mathcal{N}(i)\) é a vizinhança de \(i\).
+onde \($h_i$\) é a representação do nó, \($e_{ij}$\) representa atributos da aresta e \($\mathcal{N}(i)$\) é a vizinhança de \($i$\).
 
 ## 6. Mapa de demonstração ao vivo
 

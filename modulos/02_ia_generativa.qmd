@@ -26,19 +26,19 @@ Distribuição de dados, espaço latente, codificador, decodificador, discrimina
 
 Um modelo substituto busca aproximar uma função de alto custo:
 
-\[
+$$
 y = f(x) \quad \Rightarrow \quad \hat{y} = \hat{f}_\theta(x),
-\]
+$$
 
-em que \(f\) pode representar uma simulação CFD, análise estrutural ou cálculo de desempenho.
+em que \($f$\) pode representar uma simulação CFD, análise estrutural ou cálculo de desempenho.
 
 Em um VAE, o treinamento combina reconstrução e regularização probabilística:
 
-\[
+$$
 \mathcal{L} =
 \mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x|z)] -
 D_{KL}(q_\phi(z|x)\|p(z)).
-\]
+$$
 
 ## 6. Mapa de demonstração ao vivo
 

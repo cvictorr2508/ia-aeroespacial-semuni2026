@@ -34,3 +34,6 @@ Thumbs.db
 # Local data
 data/raw/
 data/processed/
+
+/.quarto/
+**/*.quarto_ipynb

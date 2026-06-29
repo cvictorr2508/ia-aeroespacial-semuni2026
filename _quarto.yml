@@ -12,8 +12,8 @@ book:
   date: "2026-09-20"
   date-format: "long"
   description: "Material didático aberto para minicurso de extensão sobre aplicações de inteligência artificial na engenharia aeroespacial."
-  repo-url: "https://github.com/SEU-USUARIO/ia-aeroespacial-semuni2026"
-  site-url: "https://SEU-USUARIO.github.io/ia-aeroespacial-semuni2026/"
+  repo-url: "https://github.com/cvictorr2508/ia-aeroespacial-semuni2026"
+  site-url: "https://cvictorr2508.github.io/ia-aeroespacial-semuni2026/"
   repo-actions: [edit, issue]
   downloads: [pdf, epub]
   sharing: [linkedin]
